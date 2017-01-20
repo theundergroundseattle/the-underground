@@ -1,2 +1,10 @@
-# 201-group-project
-Group project for week 4 of Code Fellows Code 201
+# THE UNDERGROUND
+This is the group project for week 4 (Project Week) of Code Fellows Code 201.
+
+The Underground is a multi-genre dance club in Pioneer Square. It is owned & operated by David Cole & Marc Pospisio under Trak Killerz, LLC.
+
+## Contributors
+- David Cole
+- Disa Marnesdottr
+- Kyle Hillman
+- Robert Hatfield
