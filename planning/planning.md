@@ -1,20 +1,25 @@
 ### Projects considered:
 - **The Underground**  
-_Suggested by David_
-  - Slideshows, etc.
-  - Dynamic schedule (filtering, as well as adding new shows)
-- ~~Text-based choose-your-own adventure~~  
-_Suggested by Disa_
+Storing photos/shows/info  
+ _Suggested by David C._  
+  - Slideshow using JavaScript
+  - Dynamic schedule (filtering, as well as the ability to add new shows)
+- ~~WebCrawlr~~  
+A web-based dungeon crawler    
+_Suggested by Robert H._
+  - May have too many requirements for the scope of this project
+  - Doesn't lend itself to a multiple page design
+- ~~Choose Your Own Adventure~~  
+A text-based adventure game.  
+_Suggested by Disa M._  
   - We'd need to write a story - is there enough time?
-- ~~WebCrawlr, a web-based dungeon crawler~~  
-_Suggested by Robert_
-  - Possibly too many things to do
-  - Doesn't lend itself to multiple page design
-- ~~Music Quiz~~  
-_Suggested by Kyle_
+- ~~Music Guessing game~~  
+Plays a short clip for user to guess  
+_Suggested by Kyle H._
 
 # **The Underground**  
-Selected project, suggested by David.
+This is our team's selected project, as suggested by David C.  
+- [The Underground's Facebook page](https://www.facebook.com/TheUnderground122/)
 
 ## Minimum requirements
 #### Technical:
