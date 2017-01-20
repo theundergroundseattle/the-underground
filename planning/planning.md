@@ -72,10 +72,10 @@ This is our team's selected project, as suggested by David C.
       - Scroll bar for bio if larger than section
     - Soundcloud embed
     - Upcoming shows w/ links to schedule page
-    - _Footer_
+    - _Footer_  
 
   - #### Schedule  
-  **_ 2nd stretch goal page_**  
+  **_ Second stretch goal page_**  
   A schedule of upcoming shows.  
   Disa's got this one _down_, so we'll definitely have a calendar in some form.
     - _Header_
@@ -115,7 +115,7 @@ All team members will be contributing to site JavaScript.
   - Calendar
   - Newsletter submission
 - **Wireframes / layout**  
-All team members are contributing; initial drafts were completed on Friday.
+All team members are contributing; initial drafts were completed on Thursday, Jan 19<sup>th</sup>.
 - **HTML**  
 All team members will be contributing to site HTML.
 - **Calendar, external APIs, etc.**  
