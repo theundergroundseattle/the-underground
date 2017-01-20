@@ -63,8 +63,8 @@ This is our team's selected project, as suggested by David C.
     - Layout will match Resident Artists _(perhaps mirrored)_
     - _Footer_
 
-  - #### Resident Artists
-  **_First stretch goal page_**
+  - #### Resident Artists  
+  **_First stretch goal page_**  
     - _Header_
     - 3 or 4 artists featured
     - Artist photo
@@ -74,7 +74,7 @@ This is our team's selected project, as suggested by David C.
     - Upcoming shows w/ links to schedule page
     - _Footer_
 
-  - #### Schedule
+  - #### Schedule  
   **_ 2nd stretch goal page_**  
   A schedule of upcoming shows.  
   Disa's got this one _down_, so we'll definitely have a calendar in some form.
@@ -91,14 +91,14 @@ This is our team's selected project, as suggested by David C.
   - [ ] HTML skeletons
   - [ ] Bio & Photo
 - David
-  - [ ]A/V assets
-  - [ ]Bio & Photo
+  - [ ] A/V assets
+  - [ ] Bio & Photo
 - Robert
-  - [x]Clean up documentation
+  - [x] Clean up documentation
   - [ ] Bio & Photo
 - Disa
-  - [ ]Calendar
-  - [ ]Bio & Photo
+  - [ ] Calendar
+  - [ ] Bio & Photo
 
 ### Primary responsibilities
 - **Project goals**  
