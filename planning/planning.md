@@ -132,6 +132,7 @@ Robert
 - On the [Index page](#index), add a slow automatic scrolling slideshow.
   - Additional stretch feature: controls (forward & back) on the slideshow
   - Even stretchier, include videos in the slides
+- On all pages, add a smaller nav bar fixed to top of browser window
 - Admin options _(a vanishing form, protected by a password)_ to change one or more of the following:
   - [Schedule](#schedule) to add new shows
   - [Contact Us](#contact-us) to add new newsletter options
