@@ -54,7 +54,7 @@ This is our team's selected project, as suggested by David C.
       - Checkbox for what you're interested in (survey)
       - Remove form and add a "Thank you" message after submitting form
     - Survey - suggest an artist
-    - Phone #, address w/ links to Google Maps
+    - Phone #, email, address w/ links to Google Maps
     - _Footer_
 
   - #### About Us
