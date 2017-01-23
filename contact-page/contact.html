@@ -16,8 +16,31 @@
         <li><a href="../about-page/about.html">About</a></li>
       </ul>
     </nav>
-    <main>
+    <main id="main_hook">
       <p>This is where the form goes</p>
+      <form class="form" id="newsletter" method="post">
+        <fieldset>
+          <legend>Newsletter subscription</legend>
+          <fieldset>
+            <legend>Name &amp; email address</legend>
+            <label for="subscriber_name">Name</label>
+            <input type="text" name="subscriber_name" placeholder="Ben Evolent" required>
+            <label for="subscriber_email">Email address</label>
+            <input type="email" name="subscriber_email" placeholder="me@provider.com" required>
+          </fieldset>
+          <fieldset>
+            <legend>Interests</legend>
+            <ul>
+              <li><input type="checkbox" name="int1" value="interest1"><label for="int1">Interest 1</label></li>
+              <li><input type="checkbox" name="int2" value="interest2"><label for="int2">Interest 2</label></li>
+              <li><input type="checkbox" name="int3" value="interest3"><label for="int3">Interest 3</label></li>
+            </ul>
+          </fieldset>
+          <section>
+            <input type="submit" name="subscribe" value="Subscribe">
+          </section>
+      </fieldset>
+      </form>
     </main>
     <footer>
       <p>legal info</p>

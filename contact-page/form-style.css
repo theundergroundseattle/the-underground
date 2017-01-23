@@ -33,3 +33,17 @@ li {
 p {
   text-align: center;
 }
+
+#main-hook li, ul {
+  display: list-item;
+  text-align: left;
+  list-style-type: none;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+input:valid {
+  border: 1px solid blue;
+}
