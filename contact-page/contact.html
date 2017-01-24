@@ -2,22 +2,46 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Home Page</title>
+    <title>Contact</title>
+    <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" style="text/css" href="form-style.css"/>
   </head>
   <body>
     <nav>
       <img />
       <ul>
-        <li><a href="../home-page/index.html">Home</a></li>
+        <li><a href="../index.html">Home</a></li>
         <li><a href="../artist-page/artist.html">Artists</a></li>
         <li><a href="../calendar-page/calendar.html">Calendar</a></li>
         <li><a href="../contact-page/contact.html">Contact</a></li>
         <li><a href="../about-page/about.html">About</a></li>
       </ul>
     </nav>
-    <main>
+    <main id="main_hook">
       <p>This is where the form goes</p>
+      <form class="form" id="newsletter" method="post">
+        <fieldset>
+          <legend>Newsletter subscription</legend>
+          <fieldset>
+            <legend>Name &amp; email address</legend>
+            <label for="subscriber_name">Name</label>
+            <input type="text" name="subscriber_name" placeholder="Ben Evolent" required>
+            <label for="subscriber_email">Email address</label>
+            <input type="email" name="subscriber_email" placeholder="me@provider.com" required>
+          </fieldset>
+          <fieldset>
+            <legend>Interests</legend>
+            <ul>
+              <li><input type="checkbox" name="int1" value="interest1"><label for="int1">Interest 1</label></li>
+              <li><input type="checkbox" name="int2" value="interest2"><label for="int2">Interest 2</label></li>
+              <li><input type="checkbox" name="int3" value="interest3"><label for="int3">Interest 3</label></li>
+            </ul>
+          </fieldset>
+          <section>
+            <input type="submit" name="subscribe" value="Subscribe">
+          </section>
+      </fieldset>
+      </form>
     </main>
     <footer>
       <p>legal info</p>

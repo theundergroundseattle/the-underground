@@ -1,1 +1,59 @@
 /*Use this page for master CSS styling*/
+ body {
+   background-color: black;
+   color: white; //placeholder color until background images are determined
+ }
+
+ nav {
+   height: 200px;
+   width: auto;
+   margin-bottom: 3%;
+ }
+
+ img {
+   width: 100%;
+   height: 150px;
+ }
+
+ ul {
+   text-align: center;
+
+ }
+
+ li {
+   display: inline;
+   font-size: 30px;
+   margin-right: 2%;
+ }
+
+   a:link {
+     color: rgb(255, 255, 255);
+     text-decoration: none;
+   }
+
+   a:hover {
+     color: rgb(24, 8, 205);
+   }
+
+   a:visited {
+     color: rgb(255, 255, 255);
+   }
+
+ footer {
+   border: 2px solid white;
+   background-color: rgb(42, 92, 179);
+   position: fixed;
+   bottom: 0;
+   height: 50px;
+   width: 100%;
+ }
+
+ #legal-info {
+   text-align: center;
+   border: 2px solid white;
+   display: inline;
+   float: left;
+   height: 30px;
+   width: 80%;
+   margin-left: 3%;
+ }
