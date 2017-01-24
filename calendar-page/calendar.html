@@ -18,30 +18,23 @@
       </ul>
     </nav>
     <main>
-      <!-- <ul id="calList">
-        <h2>List</h2>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-        <li>Item 4</li>
-        <li>Item 5</li>
-      </ul> -->
-      <section>
-        <h2>Calendar</h2>
-        <div class="calContainer">
-          <!-- container for the embedded calendar -->
-          <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23330033&amp;ctz=America%2FLos_Angeles" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-        </div>
+      <section id="calBox">
+        <h2 id="calTitle">Calendar</h2>
+        <ul id="calList">
+          <h3>Upcoming Events</h3>
+          <li class="eventList">Item 1</li>
+          <li class="eventList">Item 2</li>
+          <li class="eventList">Item 3</li>
+          <li class="eventList">Item 4</li>
+          <li class="eventList">Item 5</li>
+        </ul>
         <div class="calBlock">
-          <!-- container for the javascript calendar -->
-          <!-- <script type="text/javascript">
+          <script src="calendar-app.js"></script>
+          <script type="text/javascript">
             var cal = new Calendar(1, 2017);//setting month and year here//
             cal.generateHTML();
             document.write(cal.getHTML());
-          </script> -->
-
-
-          <!-- With gratitude to Scott Andrew LePera, the host of jszen.blogspot.com -->
+            </script>
         </div>
       </section>
       <footer>
