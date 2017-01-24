@@ -21,29 +21,25 @@ footer {
   width: 100%;
 }
 
-ul {
-  text-align: center;
-
-}
-
-/*li {
-  display: inline;
-}*/
-
 p {
   text-align: center;
 }
 
-#main-hook li, ul {
+li, ul {
   display: list-item;
   text-align: left;
   list-style-type: none;
 }
 
+ul {
+  text-align: center;
+
+}
+
 input:invalid {
-  border: 1px solid red;
+  border: 2px solid red;
 }
 
 input:valid {
-  border: 1px solid blue;
+  border: 2px solid blue;
 }
