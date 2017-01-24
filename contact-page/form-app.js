@@ -43,7 +43,8 @@ function signupRequested(event) {
   console.log('Name is: ' + name);
   console.log('Email is: ' + email);
   console.log(interests);
-  allSubscribers.push(new Subscriber(name,email,interests));
+  var subscriber = new Subscriber(name,email,interests);
+  allSubscribers.push(subscriber);
   localStorage.allSubscribers = JSON.stringify(allSubscribers);
   event.target.reset();
   var pEl = document.createElement('p');
