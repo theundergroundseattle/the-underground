@@ -48,7 +48,7 @@ Calendar.prototype.generateHTML = function(){
 //Here are the day boxes//
   var day = 1;
 //making weeks(rows)//
-  for(var i = 0; i < 9; j++) {//it really says j++ in the tutorial. we'll see.//
+  for(var i = 0; i < 9; i++) {
   //Making weekdays(cells)//
     for(var j = 0; j <= 6; j++) {
       html += '<td class="calendar-day">';
@@ -69,14 +69,9 @@ Calendar.prototype.generateHTML = function(){
 
   this.html = html;
 
-  if(day <= monthLength && (i > 0 || j >= startingDay)) {
-
-  }
 };
 
 //returning the html//
 Calendar.prototype.getHTML = function() {
   return this.html;
 };
-
-//javascript calendar currently broken. Tutorial written in html 4. Project today is to translate.//

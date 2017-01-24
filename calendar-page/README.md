@@ -1,6 +1,12 @@
+  With gratitude to Scott Andrew LePera, the host of jszen.blogspot.com, for his contribution to the structure of this code.
+
+
+
+
+
 Building three levels of calendar with a potential eventual fourth.
 
-  First level is embedded calendar in Google powder blue, with some effort at blending into the color palette of the site. The calendar is embedded. Need background image for the calendar page so that more blending can occur.
+  First level is embedded calendar in Google powder blue, with some effort at blending into the color palette of the site. The calendar is embedded. Need background image for the calendar page so that more blending can occur, although it doesn't look more awful than necessary as is.
 
   Second level is calendar built with Javascript. This calendar will be static--events entered manually--but will fulfill the MVP for the project. This is part way done.
 

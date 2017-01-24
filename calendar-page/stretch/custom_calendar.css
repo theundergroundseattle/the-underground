@@ -2,20 +2,27 @@
 white-space:normal !important;
 }
 
-.mv-dayname
+.mv-dayname {}
 /*controls the names at the top of the calendar*/
 
-.mv-daynames-table
+.mv-daynames-table {}
 /*controls the cells the name of each day sits in*/
 
-.st-bg
+.st-bg {
+  color: black;
+}
 /*controls the background of each cell. There is also .st-bg-today and .st-bg-next which control the display of the current day and tomorrow allowing you to distinguish between them.*/
 
-.st-dtitle
+.st-dtitle {}
 /*dates of the days in the calendar also .st-dtitle-today and .st-dtitle-next*/
 
-.st-dtitle-down
+.st-dtitle-down {}
 /*this is applied to the cell below todays*/
 
-.view-cap 
-.view-container-border
+.view-cap {
+  background-color: black;
+}
+
+.view-container-border {
+  background-color: black;
+}
