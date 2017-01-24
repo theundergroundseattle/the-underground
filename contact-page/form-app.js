@@ -12,10 +12,12 @@ if (localStorage.allSubscribers) {
 }
 
 // Render newsletter form
-
-// Accept input
+// Capture DOM elements
+var mainEl = document.getElementById('main-hook');
 var newsSignup = document.getElementById('newsletter');
 newsSignup.addEventListener('submit', signupRequested, false);
+
+// Accept input
 
 // Render feedback form
 
@@ -46,7 +48,8 @@ function signupRequested(event) {
   event.target.reset();
   var pEl = document.createElement('p');
   pEl.textContent = 'Thank you!';
-  newsSignup.appendChild(pEl);
+  mainEl.appendChild(pEl);
+  event.target.remove();
 }
 
 // Constructor for new newsletter subscriber
@@ -55,3 +58,6 @@ function Subscriber(name, email, interests) {
   this.email = email;
   this.interests = interests;
 }
+
+// To reappend form element to document
+// mainEl.appendChild(newsSignup);
