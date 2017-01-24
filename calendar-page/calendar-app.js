@@ -14,7 +14,6 @@ function Calendar(month, year) {
 }
 //Oh goody. Prototypes. My favorite thing. This method definition is empty.//
 Calendar.prototype.generateHTML = function(){
-
 //Giving the Date Object a date to parse. It can tell us the day of the week as an integer, from 0 to 6.//
   var firstDay = new Date(this.year, this.month, 1);
 //Then we can query the Date Object for the day of the week//
