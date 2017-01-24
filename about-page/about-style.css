@@ -1,43 +1,40 @@
 main {
-  /*border: 2px solid white;*/
-  /*background-color: rgb(132, 134, 133);*/
   height: 600px;
   width: 90%;
   margin-bottom: 15%;
   margin-left: 4%;
 }
 
-.artist-picture {
+.content-box {
+  height: 200px;
+  width: 80%;
+  /*border: 2px solid white;*/
+  margin-left: 10%;
+}
+
+.dev-picture {
   height: 170px;
   width: 170px;
   float: left;
   border: 2px solid white;
   border-radius: 200px;
   margin-left: 3%;
-  margin-top: 3%;
+  margin-top: 1.25%;
 }
 
-.pro-info {
+.dev-info {
   text-align: center;
   border: 2px solid white;
   background-color: rgb(85, 82, 82);
   display: inline-flex;;
   float: left;
-  height: 20%;
+  height: 83%;
   width: 70%;
-  /*margin: auto;*/
   margin-left: 3%;
-  margin-top: 4%;
+  margin-top: 1.25%;
   overflow-y: scroll;
 }
 
-.artist-music {
-  text-align: center;
-  /*border: 2px solid white;*/
-  display: inline;
-  float: left;
-  height: 50px;
-  width: 70%;
-  margin-left: 3%;
-  margin-top: 1%;
+#blank-space {
+  height: 100px;
 }
