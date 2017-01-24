@@ -78,3 +78,5 @@ Calendar.prototype.generateHTML = function(){
 Calendar.prototype.getHTML = function() {
   return this.html;
 };
+
+//javascript calendar currently broken. Tutorial written in html 4. Project today is to translate.//

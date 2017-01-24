@@ -1,0 +1,21 @@
+.dp-cur, .chip dt, .te, .te-t, .te-rev-s, .rb-n, .rb-i, .agenda, .event-title{
+white-space:normal !important;
+}
+
+.mv-dayname
+/*controls the names at the top of the calendar*/
+
+.mv-daynames-table
+/*controls the cells the name of each day sits in*/
+
+.st-bg
+/*controls the background of each cell. There is also .st-bg-today and .st-bg-next which control the display of the current day and tomorrow allowing you to distinguish between them.*/
+
+.st-dtitle
+/*dates of the days in the calendar also .st-dtitle-today and .st-dtitle-next*/
+
+.st-dtitle-down
+/*this is applied to the cell below todays*/
+
+.view-cap 
+.view-container-border

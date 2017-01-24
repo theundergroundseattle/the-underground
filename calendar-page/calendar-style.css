@@ -54,8 +54,11 @@ iframe {
 }
 .calContainer {
   float: left;
-  width: auto;
-  height: auto;
+  width: 800px;
+  height: 600px;
+  margin: auto;
+  padding: 0px;
+  border: 2px solid royalblue;
 }
 
 #calList {
