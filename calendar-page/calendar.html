@@ -3,30 +3,46 @@
   <head>
     <meta charset="utf-8">
     <title>Home Page</title>
+    <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" style="text/css" href="calendar-style.css"/>
   </head>
   <body>
     <nav>
-      <img />
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../artist-page/artist.html">Artists</a></li>
-        <li><a href="../calendar-page/calendar.html">Calendar</a></li>
-        <li><a href="../contact-page/contact.html">Contact</a></li>
-        <li><a href="../about-page/about.html">About</a></li>
+      <img src="../img/main-logo.png" alt="logo"/>
+      <ul id="nav-bar">
+        <li class="nav-items"><a href="../index.html">Home</a></li>
+        <li class="nav-items"><a href="../artist-page/artist.html">Artists</a></li>
+        <li class="nav-items"><a href="../calendar-page/calendar.html">Calendar</a></li>
+        <li class="nav-items"><a href="../contact-page/contact.html">Contact</a></li>
+        <li class="nav-items"><a href="../about-page/about.html">About</a></li>
       </ul>
     </nav>
     <main>
-      <ul id="list">
+      <!-- <ul id="calList">
         <h2>List</h2>
         <li>Item 1</li>
         <li>Item 2</li>
         <li>Item 3</li>
         <li>Item 4</li>
         <li>Item 5</li>
-      </ul>
+      </ul> -->
       <section>
         <h2>Calendar</h2>
+        <div class="calContainer">
+          <!-- container for the embedded calendar -->
+          <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23330033&amp;ctz=America%2FLos_Angeles" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div class="calBlock">
+          <!-- container for the javascript calendar -->
+          <!-- <script type="text/javascript">
+            var cal = new Calendar(1, 2017);//setting month and year here//
+            cal.generateHTML();
+            document.write(cal.getHTML());
+          </script> -->
+
+
+          <!-- With gratitude to Scott Andrew LePera, the host of jszen.blogspot.com -->
+        </div>
       </section>
       <footer>
         <p>legal info</p>
