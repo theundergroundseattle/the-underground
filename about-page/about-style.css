@@ -22,17 +22,29 @@ main {
   margin-top: 1.25%;
 }
 
-.dev-info {
-  text-align: center;
+.dev-box {
+  /*text-align: center;*/
   border: 2px solid white;
   background-color: rgb(85, 82, 82);
-  display: inline-flex;;
   float: left;
   height: 83%;
   width: 70%;
   margin-left: 3%;
   margin-top: 1.25%;
   overflow-y: scroll;
+}
+
+h2 {
+  float: left;
+  font-size: 30px;
+  margin-left: 2%;
+  margin-right: 2%;
+  height: 15px;
+  width: 180px;
+}
+
+.dev-info {
+  font-size: 22px;
 }
 
 #blank-space {
