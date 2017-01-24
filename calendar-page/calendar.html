@@ -18,23 +18,25 @@
       </ul>
     </nav>
     <main>
-      <h2>Calendar</h2>
-      <ul id="calList">
-        <h2>Upcoming Events</h2>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-        <li>Item 4</li>
-        <li>Item 5</li>
-      </ul>
-      <div class="calBlock">
-        <script src="calendar-app.js"></script>
-        <script type="text/javascript">
-          var cal = new Calendar(1, 2017);//setting month and year here//
-          cal.generateHTML();
-          document.write(cal.getHTML());
-        </script>
-      </div>
+      <section id="calBox">
+        <h2 id="calTitle">Calendar</h2>
+        <ul id="calList">
+          <h3>Upcoming Events</h3>
+          <li class="eventList">Item 1</li>
+          <li class="eventList">Item 2</li>
+          <li class="eventList">Item 3</li>
+          <li class="eventList">Item 4</li>
+          <li class="eventList">Item 5</li>
+        </ul>
+        <div class="calBlock">
+          <script src="calendar-app.js"></script>
+          <script type="text/javascript">
+            var cal = new Calendar(1, 2017);//setting month and year here//
+            cal.generateHTML();
+            document.write(cal.getHTML());
+            </script>
+        </div>
+      </section>
       <footer>
         <p>legal info</p>
       </footer>

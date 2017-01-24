@@ -2,16 +2,9 @@ body {
   background-color: black;//this is a placeholder. I know the site will be dark. I'm just trying not to make anything that sticks out too much./
 }
 
-h2  {
-  display: block;
-  margin: auto;
 }
 ul {
-  text-align: center;
-}
-
-li {
-  display: inline;
+  text-align: left;;
 }
 
 p {
@@ -24,6 +17,7 @@ iframe {
 .calBlock{
   float: right;
   background-color: black;
+  font-size: 28px;
 }
 .calContainer {
   float: left;
@@ -34,9 +28,23 @@ iframe {
   border: 2px solid royalblue;
 }
 
+.eventList {
+  display: block;
+  text-align: left;
+}
+
 #calList {
   color: whitesmoke;
   border: 2px solid black;
   float: left;
   height: 500px;
+}
+#calTitle {
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+#calBox {
+  width: 90%;
 }
