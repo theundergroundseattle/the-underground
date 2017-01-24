@@ -1,6 +1,7 @@
 /*Use this page for master CSS styling*/
  body {
    background-color: black;
+   color: white; //placeholder color until background images are determined
  }
 
  nav {
