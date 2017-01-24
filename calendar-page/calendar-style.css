@@ -1,3 +1,7 @@
+body {
+  background-color: black;//this is a placeholder. I know the site will be dark. I'm just trying not to make anything that sticks out too much./
+}
+
 nav {
   border: 2px solid black;
   height: 400px;
@@ -31,7 +35,6 @@ footer {
 
 ul {
   text-align: center;
-
 }
 
 li {
@@ -42,7 +45,18 @@ p {
   text-align: center;
 }
 
-#list {
+.calBlock{
+  color: white;
+  background-color: black;
+}
+.calContainer {
+  float: left;
+  width: auto;
+  height: auto;
+}
+
+#calList {
+  color: whitesmoke;
   border: 2px solid black;
   float: left;
   height: 500px;
