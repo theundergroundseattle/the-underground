@@ -18,14 +18,6 @@ section {
   margin-left: 4%;
 }
 
-footer {
-  border: 2px solid black;
-  background-color: rgb(42, 92, 179);
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
 ul {
   text-align: center;
 }

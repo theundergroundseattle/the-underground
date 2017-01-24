@@ -12,7 +12,6 @@
    height: 160px;
    width: auto;
    margin-bottom: 3%;
-   background-color: rgba(14, 14, 14, 0.70);
  }
 
  img {
@@ -20,6 +19,10 @@
    height: 100px;
    margin-left: 25%;
  }
+
+.content {
+  background-color: rgba(14, 14, 14, 0.70);
+}
 
  #nav-bar {
    text-align: center;
@@ -47,20 +50,24 @@
    }
 
  footer {
-   border: 2px solid white;
+   border-top: 1px solid rgb(42, 92, 179);
    background-color: rgb(42, 92, 179);
-   position: fixed;
-   bottom: 0;
+   margin-top: 3%;
+   position: absolute;
    height: 50px;
    width: 100%;
  }
 
- #legal-info {
-   text-align: center;
-   border: 2px solid white;
-   display: inline;
-   float: left;
-   height: 30px;
-   width: 80%;
-   margin-left: 3%;
+ #copyright-text {
+  display: inline;
+  margin-left: 33%;
+  font-size: 18px;
  }
+
+#fb-logo {
+  width: 17px;
+  height: 17px;
+  display: inline;
+  margin-top: 1%;
+  margin-left: 0.5%;
+}
