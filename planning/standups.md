@@ -86,11 +86,11 @@
     - Researched slide transitions
 
 - ### What we are working on today
-  - [ ] Merge party!
-  - [ ] Complete modal elements for team bios
+  - [x] Merge party!
+  - [x] Complete modal elements for team bios
   - [ ] Get artist / brand page updated with content
   - [ ] Add essential data to index page
-  - [ ] Content on genre
+  - [x] Content on genre
   - [ ] Refactor slides to keep DRY
 
 - ### Obstacles - current & expected
