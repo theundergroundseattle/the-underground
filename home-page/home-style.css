@@ -1,6 +1,6 @@
 
 main {
-  border: 2px solid white;
+  border: 2px solid red;
   height: 600px;
   width: auto;
   margin-bottom: 3%;
@@ -32,12 +32,25 @@ p {
   max-width: 1000px;
   position: relative;
   margin: auto;
+  width: auto;
+  height: 500px;
 }
 
 .active {
   background-color: #717171;
 }
+/*image conatiner*/
 
+.mySlides {
+  width: auto;
+  height: auto;
+}
+
+.slideshow {
+  width: auto;
+  height: auto;
+  margin-left: 0;
+}
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
