@@ -2,14 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Contact</title>
+    <title>The Underground | Contact</title>
     <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" style="text/css" href="form-style.css"/>
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
   </head>
   <body>
-    <nav>
+    <div class="content">
       <img src="../img/main-logo.png" alt="logo"/>
+    </div>
+    <nav>
       <ul id="nav-bar">
         <li class="nav-items"><a href="../index.html">HOME</a></li>
         <li class="nav-items"><a href="../artist-page/artist.html">ARTISTS</a></li>
@@ -43,6 +45,26 @@
           </section>
       </fieldset>
       </form>
+      <form class="form content" id="survey" method="post">
+        <fieldset>
+          <legend>Suggest an artist</legend>
+          Have an artist you'd like to see here? Send us any info, and we'll see if they're a good fit, and invite them to perform at The Underground.
+          <fieldset>
+            <label for="artist_name">Artist name:</label>
+            <input type="text" name="artist_name" placeholder="Artist Name" required><br />
+            <label for="artist_link">Link to artist info:</label>
+            <input type="url" name="artist_link" placeholder="http://www.soundcloud.com/example/" required><br />
+            <label for="artist_comments">Any additional comments?</label>
+            <textarea cols="50" rows="4" name="artist_comments" placeholder="Notes"></textarea>
+          </fieldset>
+          <section>
+            <input type="submit" name="survey" value="Send suggestion">
+          </section>
+        </fieldset>
+      </form>
+      <section>
+        <a href="mailing-list.html">Review current subscribers &amp; survey responses.</a>
+      </section>
     </main>
     <footer class="content">
       <p id="copyright-text">Copyright © 2017 Track Killerz LLC | All Rights Reserved | </p>
@@ -50,6 +72,7 @@
         <img id="fb-logo" src="../img/FB-f-Logo__blue_29.png" />
       </a>
     </footer>
+    <script src="../app.js"></script>
     <script src="form-app.js"></script>
   </body>
 </html>

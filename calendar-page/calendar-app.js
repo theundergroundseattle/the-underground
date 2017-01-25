@@ -4,7 +4,7 @@ var calDayLabels = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Fri
 var calMonthLabels = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 var calDaysInMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 console.log(calMonthLabels[4]);
-//Date Object. For now, this is a variable, but it looks kind of like a function, to me. I may change this shortly.//
+//Date Object. I need to understand more about date objects.//
 var calCurrentDate = new Date();
 
 //Calendar Constructor. That question mark is new for me--a ternary conditional operator. It's not quite an if/else statement, but it's close. Very cool, and way less clunky than an if/else for simple things.//
@@ -12,7 +12,7 @@ function Calendar(month, year) {
   this.month = (isNaN(month) || month == null) ? calCurrentDate.getMonth() : month;
   this.year = (isNaN(year) || year == null) ? calCurrentDate.getFullYear() : year;
 }
-//Oh goody. Prototypes. My favorite thing. This method definition is empty.//
+//Oh goody. Prototypes. My favorite thing.//
 Calendar.prototype.generateHTML = function(){
 //Giving the Date Object a date to parse. It can tell us the day of the week as an integer, from 0 to 6.//
   var firstDay = new Date(this.year, this.month, 1);
@@ -75,3 +75,5 @@ Calendar.prototype.generateHTML = function(){
 Calendar.prototype.getHTML = function() {
   return this.html;
 };
+
+console.log(calCurrentDate);

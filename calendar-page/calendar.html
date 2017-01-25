@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Home Page</title>
-    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" style="text/css" href="../main.css">
     <link rel="stylesheet" style="text/css" href="calendar-style.css"/>
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
   </head>
   <body>
-    <nav>
+    <div class="content">
       <img src="../img/main-logo.png" alt="logo"/>
+    </div>
+    <nav>
       <ul id="nav-bar">
         <li class="nav-items"><a href="../index.html">HOME</a></li>
         <li class="nav-items"><a href="../artist-page/artist.html">ARTISTS</a></li>
@@ -19,32 +21,38 @@
       </ul>
     </nav>
     <main>
-      <section id="calBox">
-        <h2 id="calTitle">Calendar</h2>
-        <ul id="calList">
-          <h3>Upcoming Events</h3>
-          <li class="eventList">Item 1</li>
-          <li class="eventList">Item 2</li>
-          <li class="eventList">Item 3</li>
-          <li class="eventList">Item 4</li>
-          <li class="eventList">Item 5</li>
-        </ul>
-        <div class="calBlock">
-          <script src="calendar-app.js"></script>
-          <script type="text/javascript">
-            var cal = new Calendar(1, 2017);//setting month and year here//
-            cal.generateHTML();
-            document.write(cal.getHTML());
-            </script>
+      <section id="calAll" class="content">
+        <!-- <h2 id="calTitle">Calendar</h2> -->
+        <!--Below is the container for the embedded calendar. The embed is commented out and folded up. DO NOT DELETE!-->
+        <div class="calContainer">
+          <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23330033&amp;ctz=America%2FLos_Angeles" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
         </div>
+          <!-- <div class="upcoming-events">
+            <h3>Upcoming</h3>
+            <ul id="calList">
+              <li class="eventList">Item 1</li>
+              <li class="eventList">Item 2</li>
+              <li class="eventList">Item 3</li>
+              <li class="eventList">Item 4</li>
+              <li class="eventList">Item 5</li>
+            </ul>
+          </div>
+          <div class="calBlock"> -->
+            <script src="calendar-app.js"></script>
+            <!--<script type="text/javascript">
+              var cal = new Calendar(1, 2017);//setting month and year here//
+              cal.generateHTML();
+              document.write(cal.getHTML());
+            </script> -->
+          <!-- </div> -->
       </section>
+      </main>
       <footer class="content">
         <p id="copyright-text">Copyright © 2017 Track Killerz LLC | All Rights Reserved | </p>
         <a href="https://www.facebook.com/TheUnderground122/">
-          <img id="fb-logo" src="../img/FB-f-Logo__blue_29.png" />
+          <img id="fb-logo" src="../img/FB-f-Logo__blue_29.png" alt="Facebook Logo">
         </a>
       </footer>
-    </main>
-    <script src="calendar-app.js"></script>
+    <script src="../app.js"></script>
   </body>
 </html>
