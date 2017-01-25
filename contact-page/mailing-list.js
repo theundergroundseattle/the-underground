@@ -17,6 +17,7 @@ allSubscribers.length > 0 ? renderSubs() : renderEmpty();
 function renderSubs() {
   for (var i = 0; i < allSubscribers.length; i++) {
     var listEl = document.createElement('ul');
+    listEl.setAttribute('class', 'content');
     mainEl.appendChild(listEl);
     var itemElName, itemElEmail, itemEl, int1El, int2El, int3El;
     itemElName = document.createElement('li');
