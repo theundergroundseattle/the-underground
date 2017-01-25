@@ -27,7 +27,7 @@ main {
   float: left;
   height: 20%;
   width: 70%;
-  /*margin: auto;*/
+  color: black;
   margin-left: 3%;
   margin-top: 4%;
   overflow-y: scroll;
