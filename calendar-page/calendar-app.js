@@ -12,7 +12,7 @@ function Calendar(month, year) {
   this.month = (isNaN(month) || month == null) ? calCurrentDate.getMonth() : month;
   this.year = (isNaN(year) || year == null) ? calCurrentDate.getFullYear() : year;
 }
-//Oh goody. Prototypes. My favorite thing. This method definition is empty.//
+//Oh goody. Prototypes. My favorite thing.//
 Calendar.prototype.generateHTML = function(){
 //Giving the Date Object a date to parse. It can tell us the day of the week as an integer, from 0 to 6.//
   var firstDay = new Date(this.year, this.month, 1);
@@ -75,3 +75,5 @@ Calendar.prototype.generateHTML = function(){
 Calendar.prototype.getHTML = function() {
   return this.html;
 };
+
+console.log(calCurrentDate);
