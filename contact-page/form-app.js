@@ -73,5 +73,5 @@ function Subscriber(name, email, interests) {
 function restoreForm() {
   var pEl = document.getElementById('thank_you');
   pEl.remove();
-  mainEl.insertBefore(newsSignup, document.getElementById('survey'));
+  mainEl.insertBefore(newsSignup, document.getElementById('artist_form'));
 }

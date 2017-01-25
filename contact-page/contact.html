@@ -45,25 +45,25 @@
           </section>
       </fieldset>
       </form>
-      <form class="form content" id="survey" method="post">
+      <form class="form content" id="artist_form" method="post">
         <fieldset>
           <legend>Suggest an artist</legend>
-          Have an artist you'd like to see here? Send us any info, and we'll see if they're a good fit, and invite them to perform at The Underground.
+          Have an artist you'd like to see here? Let us know! We'll see if they're a good fit, and invite them to perform at The Underground.
           <fieldset>
             <label for="artist_name">Artist name:</label>
             <input type="text" name="artist_name" placeholder="Artist Name" required><br />
-            <label for="artist_link">Link to artist info:</label>
+            <label for="artist_link">Link to artist page:</label>
             <input type="url" name="artist_link" placeholder="http://www.soundcloud.com/example/" required><br />
-            <label for="artist_comments">Any additional comments?</label>
-            <textarea cols="50" rows="4" name="artist_comments" placeholder="Notes"></textarea>
+            <label for="artist_comments">Notes:</label>
+            <textarea cols="50" rows="4" name="artist_comments" placeholder="Any comments about the artist? (This is optional.)"></textarea>
           </fieldset>
           <section>
-            <input type="submit" name="survey" value="Send suggestion">
+            <input type="submit" name="artist_form" value="Send suggestion">
           </section>
         </fieldset>
       </form>
       <section>
-        <a href="mailing-list.html">Review current subscribers &amp; survey responses.</a>
+        <a href="mailing-list.html">Admin</a>
       </section>
     </main>
     <footer class="content">
