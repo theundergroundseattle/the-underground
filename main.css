@@ -1,29 +1,39 @@
 /*Use this page for master CSS styling*/
  body {
-   background-color: black;
+   background-image: url(img/bg-image.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
    color: white; //placeholder color until background images are determined
  }
 
  nav {
-   height: 200px;
+   height: 160px;
    width: auto;
    margin-bottom: 3%;
  }
 
  img {
-   width: 100%;
-   height: 150px;
+   width: 668px;
+   height: 100px;
+   margin-left: 25%;
  }
+
+.content {
+  background-color: rgba(14, 14, 14, 0.70);
+}
 
  #nav-bar {
    text-align: center;
-
+   margin-top: 0;
  }
 
  .nav-items {
    display: inline;
    font-size: 30px;
-   margin-right: 2%;
+   margin-right: 4%;
+   font-family: 'Anton', sans-serif;
  }
 
    a:link {
@@ -40,20 +50,24 @@
    }
 
  footer {
-   border: 2px solid white;
+   border-top: 1px solid rgb(42, 92, 179);
    background-color: rgb(42, 92, 179);
-   position: fixed;
-   bottom: 0;
+   margin-top: 3%;
+   position: absolute;
    height: 50px;
    width: 100%;
  }
 
- #legal-info {
-   text-align: center;
-   border: 2px solid white;
-   display: inline;
-   float: left;
-   height: 30px;
-   width: 80%;
-   margin-left: 3%;
+ #copyright-text {
+  display: inline;
+  margin-left: 33%;
+  font-size: 18px;
  }
+
+#fb-logo {
+  width: 17px;
+  height: 17px;
+  display: inline;
+  margin-top: 1%;
+  margin-left: 0.5%;
+}
