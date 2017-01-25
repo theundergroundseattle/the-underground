@@ -1,14 +1,14 @@
 
 main {
-  border: 2px solid black;
+  border: 2px solid white;
   height: 600px;
   width: auto;
   margin-bottom: 3%;
 }
 
 section {
-  border: 2px solid black;
-  height: 300px;
+  border: 2px solid white;
+  height: 100px;
   width: 90%;
   margin-bottom: 15%;
   margin-left: 4%;
