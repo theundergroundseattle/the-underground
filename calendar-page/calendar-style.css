@@ -2,7 +2,22 @@ body {
   background-color: black;//this is a placeholder. I know the site will be dark. I'm just trying not to make anything that sticks out too much./
 }
 
+main {
+  border: 2px solid black;
+  height: 600px;
+  width: auto;
+  margin-bottom: 3%;
 }
+
+section {
+  border: 2px solid black;
+  float: right;
+  height: 600px;
+  width: 70%;
+  margin-bottom: 15%;
+  margin-left: 4%;
+}
+
 ul {
   text-align: left;;
 }
