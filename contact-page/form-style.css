@@ -26,7 +26,3 @@ input:invalid {
 input:valid {
   border: 2px solid blue;
 }
-
-.content {
-  background-color: rgba(14, 14, 14, 0.7);
-}
