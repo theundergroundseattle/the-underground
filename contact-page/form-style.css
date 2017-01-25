@@ -26,3 +26,15 @@ input:invalid {
 input:valid {
   border: 2px solid blue;
 }
+
+/*This centers the element in the middle of viewport.
+Solution found at https://css-tricks.com/quick-css-trick-how-to-center-an-object-exactly-in-the-center/*/
+.overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 100px;
+  border: 1px solid orange;
+}
