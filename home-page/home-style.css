@@ -1,9 +1,3 @@
-nav {
-  border: 2px solid black;
-  height: 400px;
-  width: auto;
-  margin-bottom: 3%;
-}
 
 main {
   border: 2px solid black;
@@ -18,14 +12,6 @@ section {
   width: 90%;
   margin-bottom: 15%;
   margin-left: 4%;
-}
-
-footer {
-  border: 2px solid black;
-  background-color: rgb(42, 92, 179);
-  position: fixed;
-  bottom: 0;
-  width: 100%;
 }
 
 ul {
