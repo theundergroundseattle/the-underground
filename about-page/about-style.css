@@ -34,17 +34,18 @@ main {
   overflow-y: scroll;
 }
 
-h2 {
+h3 {
   float: left;
+  text-align: center;
   font-size: 30px;
   margin-left: 2%;
   margin-right: 2%;
   height: 15px;
-  width: 180px;
+  width: 230px;
 }
 
 .dev-info {
-  font-size: 21px;
+  font-size: 19px;
   margin-left: 2%;
 }
 
