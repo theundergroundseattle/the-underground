@@ -16,7 +16,7 @@ main {
   height: 170px;
   width: 170px;
   float: left;
-  border: 2px solid white;
+  border: 1px solid rgb(91, 93, 94);
   border-radius: 200px;
   margin-left: 3%;
   margin-top: 1.25%;
@@ -24,8 +24,8 @@ main {
 
 .dev-box {
   /*text-align: center;*/
-  border: 2px solid white;
-  background-color: rgb(85, 82, 82);
+  border: 1px solid rgb(91, 93, 94);
+  background-color: rgba(14, 14, 14, 0.80);
   float: left;
   height: 83%;
   width: 70%;
@@ -44,7 +44,8 @@ h2 {
 }
 
 .dev-info {
-  font-size: 22px;
+  font-size: 21px;
+  margin-left: 2%;
 }
 
 #blank-space {
