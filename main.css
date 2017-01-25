@@ -9,9 +9,10 @@
  }
 
  nav {
-   height: 160px;
+   height: 100px;
    width: auto;
    margin-bottom: 3%;
+   margin-top: 0;
  }
 
  img {
@@ -27,11 +28,24 @@
  #nav-bar {
    text-align: center;
    margin-top: 0;
+   position: absolute;
+   top: 111.5px;
+   height: 30px;
+   width: 100%;
+   padding: 0;
+   background-color: rgba(14, 14, 14, 0.70);
+ }
+
+ #nav-bar.fixed {
+   position: fixed;
+   top: 0px;
+   background-color: rgba(14, 14, 14, 1);
+   border-bottom: 1px solid rgb(42, 92, 179);
  }
 
  .nav-items {
    display: inline;
-   font-size: 30px;
+   font-size: 20px;
    margin-right: 4%;
    font-family: 'Anton', sans-serif;
  }
