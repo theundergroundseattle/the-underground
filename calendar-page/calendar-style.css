@@ -19,11 +19,7 @@ section {
 }
 
 ul {
-  text-align: center;
-}
-
-li {
-  display: inline;
+  text-align: left;;
 }
 
 p {
@@ -34,13 +30,22 @@ iframe {
   background-color:orange; }
 
 .calBlock{
-  color: white;
+  float: right;
   background-color: black;
+  font-size: 28px;
 }
 .calContainer {
   float: left;
-  width: auto;
-  height: auto;
+  width: 800px;
+  height: 600px;
+  margin: auto;
+  padding: 0px;
+  border: 2px solid royalblue;
+}
+
+.eventList {
+  display: block;
+  text-align: left;
 }
 
 #calList {
@@ -48,4 +53,13 @@ iframe {
   border: 2px solid black;
   float: left;
   height: 500px;
+}
+#calTitle {
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+#calBox {
+  width: 90%;
 }
