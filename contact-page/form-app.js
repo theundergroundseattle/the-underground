@@ -11,11 +11,16 @@ if (localStorage.allSubscribers) {
   var allSubscribers = [];
 }
 
+var thanksTimer; // used in signupRequested() to remove a fixed element after a delay
+
+// Capture DOM elements
+var mainEl = document.getElementById('main-hook');
+var newsSignup = document.getElementById('newsletter');
+newsSignup.addEventListener('submit', signupRequested, false);
+
 // Render newsletter form
 
 // Accept input
-var newsSignup = document.getElementById('newsletter');
-newsSignup.addEventListener('submit', signupRequested, false);
 
 // Render feedback form
 
@@ -41,12 +46,20 @@ function signupRequested(event) {
   console.log('Name is: ' + name);
   console.log('Email is: ' + email);
   console.log(interests);
-  allSubscribers.push(new Subscriber(name,email,interests));
-  localStorage.allSubscribers = JSON.stringify(allSubscribers);
-  event.target.reset();
+  var subscriber = new Subscriber(name,email,interests);
+  allSubscribers.push(subscriber);
+  localStorage.allSubscribers = JSON.stringify(allSubscribers); // save change to localStorage
+  event.target.reset(); // clear form before removing from DOM tree
+  /* create a popover element (fixed position to be removed after a delay after submitting form)
+    setTimeout window method found in a tutorial by Matt Doyle at http://www.elated.com/articles/javascript-timers-with-settimeout-and-setinterval/ */
   var pEl = document.createElement('p');
+  pEl.setAttribute('class', 'overlay content');
+  pEl.setAttribute('id', 'thank_you');
   pEl.textContent = 'Thank you!';
-  newsSignup.appendChild(pEl);
+  mainEl.appendChild(pEl);
+  event.target.remove();
+  // set thanksTimer to restore form in 1.5 seconds
+  thanksTimer = setTimeout('restoreForm()', 1500);
 }
 
 // Constructor for new newsletter subscriber
@@ -54,4 +67,11 @@ function Subscriber(name, email, interests) {
   this.name = name;
   this.email = email;
   this.interests = interests;
+}
+
+// To clear thanks and reappend form element to document
+function restoreForm() {
+  var pEl = document.getElementById('thank_you');
+  pEl.remove();
+  mainEl.insertBefore(newsSignup, document.getElementById('survey'));
 }

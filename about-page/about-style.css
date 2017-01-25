@@ -1,18 +1,24 @@
 main {
   height: 600px;
   width: 90%;
-  margin-bottom: 15%;
+  margin-bottom: 5%;
   margin-left: 4%;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 8%;
 }
 
 .content-box {
   height: 200px;
-  width: 80%;
-  /*border: 2px solid white;*/
+  width: 10%;
+  float:left;
   margin-left: 10%;
+  display: inline;
 }
 
-.dev-picture {
+#dev-picture-one {
   height: 170px;
   width: 170px;
   float: left;
@@ -22,16 +28,124 @@ main {
   margin-top: 1.25%;
 }
 
+#dev-picture-one:hover {
+  transition: all 0.3s ease;
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+#my-modal-one {
+  display: none;
+  position: relative;
+  z-index: 1;
+  width: 1000px;
+  height: 100%;
+  overflow: auto;
+  left: 150px;
+}
+
+#dev-picture-two {
+  height: 170px;
+  width: 170px;
+  float: left;
+  border: 1px solid rgb(91, 93, 94);
+  border-radius: 200px;
+  margin-left: 3%;
+  margin-top: 1.25%;
+}
+
+#dev-picture-two:hover {
+  transition: all 0.3s ease;
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+#my-modal-two {
+  display: none;
+  position: relative;
+  z-index: 1;
+  width: 1000px;
+  height: 100%;
+  overflow: auto;
+  left: -93px;
+}
+
+#dev-picture-three {
+  height: 170px;
+  width: 170px;
+  float: left;
+  border: 1px solid rgb(91, 93, 94);
+  border-radius: 200px;
+  margin-left: 3%;
+  margin-top: 1.25%;
+}
+
+#dev-picture-three:hover {
+  transition: all 0.3s ease;
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+#my-modal-three {
+  display: none;
+  position: relative;
+  z-index: 1;
+  width: 1000px;
+  height: 100%;
+  overflow: auto;
+  left: -333px;
+}
+
+#dev-picture-four {
+  height: 170px;
+  width: 170px;
+  float: left;
+  border: 1px solid rgb(91, 93, 94);
+  border-radius: 200px;
+  margin-left: 3%;
+  margin-top: 1.25%;
+}
+
+#dev-picture-four:hover {
+  transition: all 0.3s ease;
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+#my-modal-four {
+  display: none;
+  position: relative;
+  z-index: 1;
+  width: 1000px;
+  height: 100%;
+  overflow: auto;
+  left: -578px;
+}
+
+
+.close {
+  color: #aaa;
+  float: right;
+  margin-right: 1%;
+  font-size: 20px;
+}
+
 .dev-box {
   /*text-align: center;*/
   border: 1px solid rgb(91, 93, 94);
   background-color: rgba(14, 14, 14, 0.80);
-  float: left;
-  height: 83%;
+  /*float: left;*/
+  position: absolute;
+  height: 74%;
   width: 70%;
-  margin-left: 3%;
-  margin-top: 1.25%;
+  /*margin-left: 15%;*/
+  margin-top: 5%;
   overflow-y: scroll;
+  transition: all 0.3s ease-in-out;
 }
 
 h3 {
@@ -50,5 +164,5 @@ h3 {
 }
 
 #blank-space {
-  height: 100px;
+  height: 20px;
 }
