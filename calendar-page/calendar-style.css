@@ -11,8 +11,19 @@ p {
   text-align: center;
 }
 
-iframe {
-  background-color:orange; }
+table {
+
+}
+
+.calendar-day {
+  width: 150px;
+  height: 70px;
+}
+
+tr {
+  height: 60px;
+  width: 960px;
+}
 
 .calBlock{
   float: right;

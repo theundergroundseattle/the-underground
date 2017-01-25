@@ -4,7 +4,7 @@ var calDayLabels = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Fri
 var calMonthLabels = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 var calDaysInMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 console.log(calMonthLabels[4]);
-//Date Object. For now, this is a variable, but it looks kind of like a function, to me. I may change this shortly.//
+//Date Object. I need to understand more about date objects.//
 var calCurrentDate = new Date();
 
 //Calendar Constructor. That question mark is new for me--a ternary conditional operator. It's not quite an if/else statement, but it's close. Very cool, and way less clunky than an if/else for simple things.//
