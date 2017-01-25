@@ -72,9 +72,26 @@
 
 ## Wed Jan 25  
 - ### What we worked on yesterday  
-
-- ### What we worked on yesterday  
+  - Kyle  
+    - Formatting, footer completed. Nav bar sticks to top of page on scroll up.
+    - Working on some modal elements for team bios on about page
+  - Robert
+    - Feedback to site visitor when form is submitted.
+    - Survey form added - no JS functionality yet
+    - Suggest add site name to page titles
+    - Genre list needed, feedback form
+    - Added a timed popover message
+  - David
+    - Reorganized image assets, renaming and sorting
+    - Researched slide transitions
 
 - ### What we are working on today
   - [ ] Merge party!
+  - [ ] Complete modal elements for team bios
+  - [ ] Get artist / brand page updated with content
+  - [ ] Add essential data to index page
+  - [ ] Content on genre
+  - [ ] Refactor slides to keep DRY
+
 - ### Obstacles - current & expected
+  - None expected
