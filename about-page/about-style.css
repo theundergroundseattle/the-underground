@@ -1,43 +1,54 @@
 main {
-  /*border: 2px solid white;*/
-  /*background-color: rgb(132, 134, 133);*/
   height: 600px;
   width: 90%;
   margin-bottom: 15%;
   margin-left: 4%;
 }
 
-.artist-picture {
+.content-box {
+  height: 200px;
+  width: 80%;
+  /*border: 2px solid white;*/
+  margin-left: 10%;
+}
+
+.dev-picture {
   height: 170px;
   width: 170px;
   float: left;
-  border: 2px solid white;
+  border: 1px solid rgb(91, 93, 94);
   border-radius: 200px;
   margin-left: 3%;
-  margin-top: 3%;
+  margin-top: 1.25%;
 }
 
-.pro-info {
-  text-align: center;
-  border: 2px solid white;
-  background-color: rgb(85, 82, 82);
-  display: inline-flex;;
+.dev-box {
+  /*text-align: center;*/
+  border: 1px solid rgb(91, 93, 94);
+  background-color: rgba(14, 14, 14, 0.80);
   float: left;
-  height: 20%;
+  height: 83%;
   width: 70%;
-  /*margin: auto;*/
   margin-left: 3%;
-  margin-top: 4%;
+  margin-top: 1.25%;
   overflow-y: scroll;
 }
 
-.artist-music {
-  text-align: center;
-  /*border: 2px solid white;*/
-  display: inline;
+h3 {
   float: left;
-  height: 50px;
-  width: 70%;
-  margin-left: 3%;
-  margin-top: 1%;
+  text-align: center;
+  font-size: 30px;
+  margin-left: 2%;
+  margin-right: 2%;
+  height: 15px;
+  width: 230px;
+}
+
+.dev-info {
+  font-size: 19px;
+  margin-left: 2%;
+}
+
+#blank-space {
+  height: 100px;
 }
