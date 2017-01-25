@@ -1,21 +1,17 @@
-body {
-  background-color: black;//this is a placeholder. I know the site will be dark. I'm just trying not to make anything that sticks out too much./
-}
-
 main {
-  border: 2px solid black;
   height: 600px;
-  width: auto;
+  width: 100%;
   margin-bottom: 3%;
 }
 
 section {
-  border: 2px solid black;
   float: right;
   height: 600px;
   width: 70%;
-  margin-bottom: 15%;
-  margin-left: 4%;
+  margin-top: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+  margin-left: 10%;
 }
 
 ul {
@@ -26,31 +22,47 @@ p {
   text-align: center;
 }
 
-iframe {
-  background-color:orange; }
+table {
+  font-family: ;
+}
+
+.calendar-day {
+  width: 100px;
+  height: 45px;
+}
+
+tr {
+  height: 60px;
+  width: 960px;
+}
 
 .calBlock{
-  float: right;
-  background-color: black;
-  font-size: 28px;
+  /*float: right;*/
+  position: absolute;
+  right: 50px;
+  font-size: 18px;
 }
 .calContainer {
-  float: left;
-  width: 800px;
-  height: 600px;
+  /*float: left;*/
+  width: 810px;
+  height: 610px;
   margin: auto;
   padding: 0px;
-  border: 2px solid royalblue;
+  /*border: 1px solid royalblue;*/
 }
 
 .eventList {
-  display: block;
   text-align: left;
+}
+
+.upcoming-events {
+  position: absolute;
+  left: auto;
 }
 
 #calList {
   color: whitesmoke;
-  border: 2px solid black;
+  /*border: 2px solid black;*/
   float: left;
   height: 500px;
 }
@@ -61,5 +73,12 @@ iframe {
 }
 
 #calBox {
-  width: 90%;
+  width: 100%;
+  height: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  /*background-color: rgba(14, 14, 14, 0.9);*/
+}
+
+#calAll {
 }
