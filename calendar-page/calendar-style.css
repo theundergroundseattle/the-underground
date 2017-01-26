@@ -39,7 +39,7 @@ tr {
 
 .calBlock{
   position: absolute;
-  top: 68%;
+  top: 58%;
   right: 5%;
   font-size: 18px;
 }
@@ -47,7 +47,7 @@ tr {
 
 .upcoming-events {
   position: absolute;
-  top: 80%;
+  top: 70%;
   left: 2%;
   font-size: 18px;
 
@@ -87,6 +87,18 @@ tr {
 }
 
 #calAll {
+  position: absolute;
+  top: 5%;
   width: 100%;
   height: auto;
+}
+
+select {
+  position: absolute;
+  left: 2%;
+  top: 65%;
+  background-color: black;
+  color: white;
+  border: 1px solid rgb(42, 92, 179);
+  font-size: 16px;
 }
