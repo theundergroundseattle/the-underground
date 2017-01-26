@@ -78,45 +78,16 @@ Calendar.prototype.getHTML = function() {
 
 console.log(calCurrentDate);
 
-function drawNewCal() {
-  var cal = new Calendar(5,1970);//setting month and year here//
+function drawNewCal(month, year) {
+  var cal = new Calendar(month,year);//setting month and year here//
   cal.generateHTML();
-  document.write(cal.getHTML());
+  document.getElementById('calBlock').innerHTML = cal.getHTML();
 };
 
-/* Toggle between hiding and showing the dropdown content when the user clicks on the button. */
-function moFunction() {
-  document.getElementById('moDropdown').classList.toggle('show');
+function calUpdate() {
+  var userDate = document.getElementById('dateList').value.split(',');
+  console.log(userDate);
+  var userMonth = parseInt(userDate[0]);
+  var userYear = parseInt(userDate[1]);
+  drawNewCal(userMonth, userYear);
 }
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName('dropdown-content');
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-};
-
-function yrFunction() {
-  document.getElementById('yrDropdown').classList.toggle('show');
-}
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName('dropdown-content');
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-};

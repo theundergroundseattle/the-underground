@@ -28,7 +28,7 @@ table {
 }
 
 .calendar-day {
-  width: 100px;
+  width: 15%;
   height: 45px;
 }
 
@@ -39,15 +39,15 @@ tr {
 
 .calBlock{
   position: absolute;
-  top: 300px;
-  right: 30px;
+  top: 68%;
+  right: 5%;
   font-size: 18px;
 }
 
 
 .upcoming-events {
   position: absolute;
-  top: 400px;
+  top: 80%;
   left: 2%;
   font-size: 18px;
 
@@ -89,79 +89,4 @@ tr {
 #calAll {
   width: 100%;
   height: auto;
-}
-
-/*Dropdown Menus*/
-/*position for div that holds dropdown menu buttons*/
-#dropdown-menus {
-  position: absolute;
-  top: 62%;
-  left: 2.5%;
-}
-/*button*/
-.dropbtn {
-  /*background-color: midnightblue;*/
-  color: white;
-  padding: 6px;
-  font-size: 18px;
-  border: none;
-  cursor: pointer;
-}
-/*button on hover and focus*/
-.dropbtn:hover, .dropbtn:focus {
-  color: aqua;
-  /*background-color: aqua;*/
-}
-
-/*positioning the content inside the container div*/
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/*dropown content hidden by default*/
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: black;
-  min-width: 85px;
-  z-index: 1;
-}
-
-/*links inside the dropdown*/
-.dropdown-content a {
-  color: white;
-  font-size: 18px;
-  padding: 3px 4px;
-  text-decoration: none;
-  display: block;
-}
-
-/*change color of dropdown links on hover*/
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
-
-/*Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button)*/
-.show {
-  display:block;
-}
-
-/*positioning for dropdown menu buttons*/
-#select {
-  font-size: 18px;
-  position: absolute;
-  top: 40px;
-  left: 0px;
-}
-#dropmo {
-  position: absolute;
-  top: 12px;
-  left: 50px;
-}
-
-#dropyr {
-  position: absolute;
-  top: 12px;
-  left: 100px;
 }

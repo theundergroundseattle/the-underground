@@ -23,35 +23,20 @@
     <main>
       <section class="content calAll">
         <h2 id="calTitle">Calendar</h2>
-        <div id="dropdown-menus">
-          <p id="select">Select:</p>
-        <div class="dropdown">
-          <p onclick="moFunction()" id="dropmo" class="dropbtn">Month</p>
-            <div id="moDropdown" class="dropdown-content">
-              <a href="#">January</a>
-              <a href="#">February</a>
-              <a href="#">March</a>
-              <a href="#">April</a>
-              <a href="#">May</a>
-              <a href="#">June</a>
-              <a href="#">July</a>
-              <a href="#">August</a>
-              <a href="#">September</a>
-              <a href="#">October</a>
-              <a href="#">November</a>
-              <a href="#">December</a>
-            </div>
-        </div>
-        <div class="dropdown">
-          <p onclick="yrFunction()" id="dropyr" class="dropbtn">Year</p>
-            <div id="yrDropdown" class="dropdown-content">
-              <a href="#">2017</a>
-              <a href="#">2018</a>
-              <a href="#">2019</a>
-        </div>
-        </div>
-        </div>
-
+        <select onchange="calUpdate()" id="dateList" name="Select">
+          <option value="0,2017">January</option>
+          <option value="1,2017">February</option>
+          <option value="2,2017">March</option>
+          <option value="3,2017">April</option>
+          <option value="4,2017">May</option>
+          <option value="5,2017">June</option>
+          <option value="6,2017">July</option>
+          <option value="7,2017">August</option>
+          <option value="8,2017">September</option>
+          <option value="9,2017">October</option>
+          <option value="10,2017">November</option>
+          <option value="11,2017">December</option>
+        </select>
         <!--Below is the container for the embedded calendar. The embed is commented out and folded up. DO NOT DELETE!-->
         <!-- <div class="calContainer">
           <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23330033&amp;ctz=America%2FLos_Angeles" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
@@ -66,10 +51,11 @@
               <li>Item 5</li>
             </ul>
           </div>
-          <div class="calBlock">
+          <div id="calBlock" class="calBlock">
             <script src="calendar-app.js"></script>
             <script type="text/javascript">
-              drawNewCal();
+              drawNewCal(5,1991);
+
               // event handler to populate year goes in here
 
             </script>
