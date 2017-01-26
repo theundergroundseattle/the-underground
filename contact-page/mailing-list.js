@@ -19,22 +19,25 @@ function renderSubs() {
   for (var i = 0; i < allSubscribers.length; i++) {
     var listEl = document.createElement('ul');
     subscriberSectionEl.appendChild(listEl);
-    var itemElName, itemElEmail, itemEl, int1El, int2El, int3El;
-    itemElName = document.createElement('li');
-    itemElEmail = document.createElement('li');
-    int1El = document.createElement('li');
-    int2El = document.createElement('li');
-    int3El = document.createElement('li');
-    itemElName.textContent = 'Name: ' + allSubscribers[i].name;
-    itemElEmail.textContent = 'Email address: ' + allSubscribers[i].email;
-    int1El.textContent = 'Interest 1: ' + allSubscribers[i].interests.interest1.toString();
-    int2El.textContent = 'Interest 2: ' + allSubscribers[i].interests.interest2.toString();
-    int3El.textContent = 'Interest 3: ' + allSubscribers[i].interests.interest3.toString();
-    listEl.appendChild(itemElName);
-    listEl.appendChild(itemElEmail);
-    listEl.appendChild(int1El);
-    listEl.appendChild(int2El);
-    listEl.appendChild(int3El);
+    var subscriberObject = allSubscribers[i];
+    console.log(subscriberObject);
+    for (var key in subscriberObject) {
+      if (key !== 'interests') {
+        var itemEl = document.createElement('li');
+        itemEl.textContent = key.toUpperCase() + ': ' + subscriberObject[key];
+        listEl.appendChild(itemEl);
+        console.log(key);
+        console.log(subscriberObject[key]);
+      } else {
+        for (var genre in subscriberObject['interests']) {
+          var itemEl = document.createElement('li');
+          itemEl.textContent = genre.toUpperCase() + ': ' + subscriberObject['interests'][genre];
+          listEl.appendChild(itemEl);
+          console.log(genre);
+          console.log(subscriberObject['interests'][genre]);
+        }
+      }
+    }
   }
 }
 
