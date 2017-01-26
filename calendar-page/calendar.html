@@ -21,30 +21,59 @@
       </ul>
     </nav>
     <main>
-      <section id="calAll" class="content">
-        <!-- <h2 id="calTitle">Calendar</h2> -->
-        <!--Below is the container for the embedded calendar. The embed is commented out and folded up. DO NOT DELETE!-->
-        <div class="calContainer">
-          <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23330033&amp;ctz=America%2FLos_Angeles" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+      <section class="content calAll">
+        <h2 id="calTitle">Calendar</h2>
+        <div id="dropdown-menus">
+          <p id="select">Select:</p>
+        <div class="dropdown">
+          <p onclick="myFunction()" id="dropmo" class="dropbtn">Month</p>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">January</a>
+              <a href="#">February</a>
+              <a href="#">March</a>
+              <a href="#">April</a>
+              <a href="#">May</a>
+              <a href="#">June</a>
+              <a href="#">July</a>
+              <a href="#">August</a>
+              <a href="#">September</a>
+              <a href="#">October</a>
+              <a href="#">November</a>
+              <a href="#">December</a>
+            </div>
         </div>
-          <!-- <div class="upcoming-events">
-            <h3>Upcoming</h3>
+        <div class="dropdown">
+          <p onclick="myOtherFunction()" id="dropyr" class="dropbtn">Year</p>
+            <div id="myOtherDropdown" class="dropdown-content">
+              <a href="#">2017</a>
+              <a href="#">2018</a>
+              <a href="#">2019</a>
+        </div>
+        </div>
+        </div>
+
+        <!--Below is the container for the embedded calendar. The embed is commented out and folded up. DO NOT DELETE!-->
+        <!-- <div class="calContainer">
+          <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23330033&amp;ctz=America%2FLos_Angeles" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div> -->
+          <div class="upcoming-events">
+            <p>Upcoming</p>
             <ul id="calList">
-              <li class="eventList">Item 1</li>
-              <li class="eventList">Item 2</li>
-              <li class="eventList">Item 3</li>
-              <li class="eventList">Item 4</li>
-              <li class="eventList">Item 5</li>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+              <li>Item 4</li>
+              <li>Item 5</li>
             </ul>
           </div>
-          <div class="calBlock"> -->
+          <div class="calBlock">
             <script src="calendar-app.js"></script>
-            <!--<script type="text/javascript">
-              var cal = new Calendar(1, 2017);//setting month and year here//
+            <script type="text/javascript">
+              var cal = new Calendar(5,1970);//setting month and year here//
               cal.generateHTML();
               document.write(cal.getHTML());
-            </script> -->
-          <!-- </div> -->
+            </script>
+          </div>
       </section>
       </main>
       <footer class="content">
