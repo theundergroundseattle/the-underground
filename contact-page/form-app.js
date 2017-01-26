@@ -93,7 +93,13 @@ function feedbackGiven(event) {
   event.preventDefault();
   event.stopPropagation();
   console.log(event.target);
-};
+  if (event.target.feedback_email) {
+    var email = event.target.feedback_email.value;
+  }
+  var text = event.target.feedback_text.value;
+  var feedback = new Feedback(email, text);
+  allFeedback.push(feedback);
+}
 
 // Constructors for new newsletter subscriber
 function Subscriber(name, email, interests) {
@@ -108,6 +114,13 @@ function Artist(name, url, comments) {
   if (comments) {
     this.comments = comments;
   }
+}
+
+function Feedback(email, text) {
+  if (email) {
+    this.email = email;
+  }
+  this.text = text;
 }
 
 // To clear "thanks" popover
