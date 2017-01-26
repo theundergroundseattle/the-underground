@@ -1,17 +1,16 @@
 
 main {
-  border: 2px solid red;
   height: 700px;
   width: auto;
   margin-bottom: 3%;
 }
 
 section {
-  border: 2px solid white;
   height: 100px;
-  width: 90%;
+  width: 70%;
   margin-bottom: 7%;
-  margin-left: 4%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 ul {
@@ -24,8 +23,10 @@ li {
 }
 
 p {
-  text-align: center;
-  position: absolute;
+  text-align: center;;
+  position: relative;
+  font-family: 'Arsenal', sans-serif;
+  font-weight:
 }
 
 /* Slideshow container */
@@ -60,7 +61,7 @@ p {
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
+/* @- allows for compatibility with other browser*/
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
