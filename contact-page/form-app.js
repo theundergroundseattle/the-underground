@@ -2,11 +2,11 @@
 
 // Check localStorage for prior user signup - if not, initialize it with a data type of Array
 if (localStorage.allSubscribers) {
+  // If allProducts in localStorage, copy values accumulated over the past session
   allSubscribers = JSON.parse(localStorage.allSubscribers);
   console.log('Retrieving from localStorage');
   console.log(allSubscribers);
 } else {
-  // If allProducts _is_ in localStorage, copy values accumulated over the past session
   console.log('There\'s no local storage!');
   var allSubscribers = [];
 }
@@ -62,18 +62,7 @@ function signupRequested(event) {
   console.log(interests);
   var subscriber = new Subscriber(name,email,interests);
   allSubscribers.push(subscriber);
-  localStorage.allSubscribers = JSON.stringify(allSubscribers); // save change to localStorage
-  event.target.reset(); // clear form after submitting
-  /* create a popover element (fixed position to be removed after a delay after submitting form)
-    setTimeout window method found in a tutorial by Matt Doyle at http://www.elated.com/articles/javascript-timers-with-settimeout-and-setinterval/ */
-  var pEl = document.createElement('p');
-  pEl.setAttribute('class', 'overlay content');
-  pEl.setAttribute('id', 'thank_you');
-  pEl.textContent = 'Thank you!';
-  mainEl.appendChild(pEl);
-  // event.target.remove();
-  // set thanksTimer to restore form in 1.5 seconds
-  thanksTimer = setTimeout('restoreForm()', 1500);
+  saveResponse('allSubscribers', allSubscribers);
 }
 
 function artistSuggested(event) {
@@ -87,6 +76,7 @@ function artistSuggested(event) {
   }
   var suggestion = new Artist(name, url, comments);
   allArtists.push(suggestion);
+  saveResponse('allArtists', allArtists);
 }
 
 function feedbackGiven(event) {
@@ -99,6 +89,7 @@ function feedbackGiven(event) {
   var text = event.target.feedback_text.value;
   var feedback = new Feedback(email, text);
   allFeedback.push(feedback);
+  saveResponse('allFeedback', allFeedback);
 }
 
 // Constructors for new newsletter subscriber
@@ -123,8 +114,24 @@ function Feedback(email, text) {
   this.text = text;
 }
 
+function saveResponse(storageName, arrayToBeSaved) {
+  localStorage[storageName] = JSON.stringify(arrayToBeSaved); // save change to localStorage
+  event.target.reset(); // clear form after submitting
+  /* create a popover element (fixed position to be removed after a delay after submitting form)
+    setTimeout window method found in a tutorial by Matt Doyle at http://www.elated.com/articles/javascript-timers-with-settimeout-and-setinterval/ */
+  var pEl = document.createElement('p');
+  pEl.setAttribute('class', 'overlay content');
+  pEl.setAttribute('id', 'thank_you');
+  pEl.textContent = 'Thank you!';
+  mainEl.appendChild(pEl);
+  // event.target.remove();
+  // set thanksTimer to restore form in 1.5 seconds
+  thanksTimer = setTimeout('clearThanks()', 1500);
+
+}
+
 // To clear "thanks" popover
-function restoreForm() {
+function clearThanks() {
   var pEl = document.getElementById('thank_you');
   pEl.remove();
   // mainEl.insertBefore(newsSignup, document.getElementById('artist_form'));
