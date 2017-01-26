@@ -7,6 +7,7 @@ var resetButton = document.getElementById('reset');
 var storageNames = ['allSubscribers', 'allArtists', 'allFeedback'];
 
 // Check localStorage for all arrays saved in form-app.js
+// Would be nice to refactor - perhaps declare variables before checking localStorage
 for (var i = 0; i < storageNames.length; i++) {
   if (localStorage[storageNames[i]]) {
     switch (i) {
@@ -39,16 +40,7 @@ for (var i = 0; i < storageNames.length; i++) {
   }
 }
 
-// if (localStorage.allSubscribers) {
-//   allSubscribers = JSON.parse(localStorage.allSubscribers);
-//   console.log('Retrieving from localStorage');
-//   console.log(allSubscribers);
-// } else {
-//   // If allProducts _is_ in localStorage, copy values accumulated over the past session
-//   console.log('There\'s no local storage!');
-//   var allSubscribers = [];
-// }
-
+// Render data, or if none, state there is no new data
 allSubscribers.length > 0 ? renderSubs() : renderEmpty(subscriberSectionEl, 'subscribers');
 allArtists.length > 0 ? renderArtists() : renderEmpty(artistSectionEl, 'artists suggested');
 allFeedback.length > 0 ? renderFeedback() : renderEmpty(feedbackSectionEl, 'feedback offered');
@@ -113,7 +105,7 @@ function renderEmpty(domElement, responseChecked) {
 }
 
 // Add a reset button to clear localStorage of past results and reload page
-// Maybe use ROT13 "encryption" lolwut
+// Maybe use ROT13 "encryption"? lolwut
 resetButton.onclick = function() {
   console.log('Reset button was pressed.');
   var checkReset = prompt('Are you sure? Doing so will erase all new records.\nPlease enter your admin password if this is correct. Otherwise press \'Cancel\'.');
