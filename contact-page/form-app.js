@@ -1,16 +1,6 @@
 'use strict';
 
-// Check localStorage for prior user signup - if not, initialize it with a data type of Array
-// if (localStorage.allSubscribers) {
-//   // If allProducts in localStorage, copy values accumulated over the past session
-//   allSubscribers = JSON.parse(localStorage.allSubscribers);
-//   console.log('Retrieving from localStorage');
-//   console.log(allSubscribers);
-// } else {
-//   console.log('There\'s no local storage!');
-//   var allSubscribers = [];
-// }
-// Check localStorage for all arrays saved in form-app.js
+// Check localStorage for any arrays saved in prior sessions
 var storageNames = ['allSubscribers', 'allArtists', 'allFeedback'];
 for (var i = 0; i < storageNames.length; i++) {
   if (localStorage[storageNames[i]]) {
@@ -58,8 +48,6 @@ for (var i = 0; i < storageNames.length; i++) {
 var thanksTimer; // used in signupRequested() to remove a fixed element after a delay
 var genreList = ['Breaks', 'Drum and Bass', 'Dubstep', 'Hardcore', 'Hardstyle', 'House', 'Trance', 'Trap', 'Other'];
 var interestName;
-// var allArtists = [];
-// var allFeedback = [];
 
 // Capture DOM elements
 var mainEl = document.getElementById('main-hook');
@@ -168,11 +156,10 @@ function saveResponse(storageName, arrayToBeSaved) {
   /* create a popover element (fixed position to be removed after a delay after submitting form)
     setTimeout window method found in a tutorial by Matt Doyle at http://www.elated.com/articles/javascript-timers-with-settimeout-and-setinterval/ */
   var pEl = document.createElement('p');
-  pEl.setAttribute('class', 'overlay content');
+  pEl.setAttribute('class', 'overlay');
   pEl.setAttribute('id', 'thank_you');
   pEl.textContent = 'Thank you!';
   mainEl.appendChild(pEl);
-  // event.target.remove();
   // set thanksTimer to restore form in 1.5 seconds
   thanksTimer = setTimeout('clearThanks()', 1500);
 
@@ -182,7 +169,6 @@ function saveResponse(storageName, arrayToBeSaved) {
 function clearThanks() {
   var pEl = document.getElementById('thank_you');
   pEl.remove();
-  // mainEl.insertBefore(newsSignup, document.getElementById('artist_form'));
 }
 
 // Ensure URL fields have "http://" prepended before form submission
