@@ -14,21 +14,18 @@ if (localStorage.allSubscribers) {
 var thanksTimer; // used in signupRequested() to remove a fixed element after a delay
 var genreList = ['Breaks', 'Drum and Bass', 'Dubstep', 'Hardcore', 'Hardstyle', 'House', 'Trance', 'Trap', 'Other'];
 var interestName;
+var allArtists = [];
+var allFeedback = [];
 
 // Capture DOM elements
 var mainEl = document.getElementById('main-hook');
 var newsSignup = document.getElementById('newsletter');
+var artistEl = document.getElementById('artist-form');
+var feedbackEl = document.getElementById('feedback-form');
+
 newsSignup.addEventListener('submit', signupRequested, false);
-
-// Render newsletter form
-
-// Accept input
-
-// Render feedback form
-
-// Accept feedback input
-
-// Remove element, return feedback
+artistEl.addEventListener('submit', artistSuggested, false);
+feedbackEl.addEventListener('submit', feedbackGiven, false);
 
 // Event listener for newsletter signup
 function signupRequested(event) {
@@ -66,7 +63,7 @@ function signupRequested(event) {
   var subscriber = new Subscriber(name,email,interests);
   allSubscribers.push(subscriber);
   localStorage.allSubscribers = JSON.stringify(allSubscribers); // save change to localStorage
-  event.target.reset(); // clear form before removing from DOM tree
+  event.target.reset(); // clear form after submitting
   /* create a popover element (fixed position to be removed after a delay after submitting form)
     setTimeout window method found in a tutorial by Matt Doyle at http://www.elated.com/articles/javascript-timers-with-settimeout-and-setinterval/ */
   var pEl = document.createElement('p');
@@ -74,21 +71,63 @@ function signupRequested(event) {
   pEl.setAttribute('id', 'thank_you');
   pEl.textContent = 'Thank you!';
   mainEl.appendChild(pEl);
-  event.target.remove();
+  // event.target.remove();
   // set thanksTimer to restore form in 1.5 seconds
   thanksTimer = setTimeout('restoreForm()', 1500);
 }
 
-// Constructor for new newsletter subscriber
+function artistSuggested(event) {
+  event.preventDefault();
+  event.stopPropagation();
+  console.log(event.target);
+  var name = event.target.artist_name.value;
+  var url = event.target.artist_link.value;
+  if (event.target.artist_comments.value) {
+    var comments = event.target.artist_comments.value;
+  }
+  var suggestion = new Artist(name, url, comments);
+  allArtists.push(suggestion);
+}
+
+function feedbackGiven(event) {
+  event.preventDefault();
+  event.stopPropagation();
+  console.log(event.target);
+};
+
+// Constructors for new newsletter subscriber
 function Subscriber(name, email, interests) {
   this.name = name;
   this.email = email;
   this.interests = interests;
 }
 
-// To clear thanks and reappend form element to document
+function Artist(name, url, comments) {
+  this.artistName = name;
+  this.url = url;
+  if (comments) {
+    this.comments = comments;
+  }
+}
+
+// To clear "thanks" popover
 function restoreForm() {
   var pEl = document.getElementById('thank_you');
   pEl.remove();
-  mainEl.insertBefore(newsSignup, document.getElementById('artist_form'));
+  // mainEl.insertBefore(newsSignup, document.getElementById('artist_form'));
+}
+
+// Ensure URL fields have "http://" prepended before form submission
+// Solution by Mosh Feu found at http://stackoverflow.com/a/28282844
+// Modified after researching use of "!~" before indexOf.
+// Pointy at http://stackoverflow.com/a/12299717 explains its use and advises against it for clarity
+function fixUrl (that) {
+  console.log('Fix call working!');
+  console.log(that);
+  var string = that.value;
+  if (string.indexOf('http') !== 0) {
+    string = 'http://' + string;
+  }
+  that.value = string;
+  return that;
 }

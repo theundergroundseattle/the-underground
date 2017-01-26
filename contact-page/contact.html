@@ -77,7 +77,7 @@
           </section>
       </fieldset>
       </form>
-      <form class="form content" id="artist_form" method="post">
+      <form class="form content" id="artist-form" method="post">
         <fieldset>
           <legend>Suggest an artist</legend>
           Have an artist you'd like to see here? Let us know! We'll see if they're a good fit, and invite them to perform at The Underground.
@@ -85,7 +85,7 @@
             <label for="artist_name">Artist name:</label>
             <input type="text" name="artist_name" placeholder="Artist Name" required><br />
             <label for="artist_link">Link to artist page:</label>
-            <input type="url" name="artist_link" placeholder="http://www.soundcloud.com/example/" required><br />
+            <input type="url" name="artist_link" placeholder="http://www.soundcloud.com/example/" required onblur="fixUrl(this)"><br />
             <label for="artist_comments">Notes:</label>
             <textarea cols="50" rows="4" name="artist_comments" placeholder="Any comments about the artist? (This is optional.)"></textarea>
           </fieldset>
@@ -94,7 +94,7 @@
           </section>
         </fieldset>
       </form>
-      <form class="form content" id="feedback_form" method="post">
+      <form class="form content" id="feedback-form" method="post">
         <fieldset>
           <legend>Feedback</legend>
           Let us know how we're doing.
