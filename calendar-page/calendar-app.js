@@ -77,3 +77,9 @@ Calendar.prototype.getHTML = function() {
 };
 
 console.log(calCurrentDate);
+
+function drawNewCal() {
+  var cal = new Calendar(5,1970);//setting month and year here//
+  cal.generateHTML();
+  document.write(cal.getHTML());
+};
