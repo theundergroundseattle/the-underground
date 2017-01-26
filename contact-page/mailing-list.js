@@ -1,19 +1,57 @@
 'use strict';
 
 var subscriberSectionEl = document.getElementById('subscribers');
+var artistSectionEl = document.getElementById('artists');
+var feedbackSectionEl = document.getElementById('feedback');
 var resetButton = document.getElementById('reset');
+var storageNames = ['allSubscribers', 'allArtists', 'allFeedback'];
 
-if (localStorage.allSubscribers) {
-  allSubscribers = JSON.parse(localStorage.allSubscribers);
-  console.log('Retrieving from localStorage');
-  console.log(allSubscribers);
-} else {
-  // If allProducts _is_ in localStorage, copy values accumulated over the past session
-  console.log('There\'s no local storage!');
-  var allSubscribers = [];
+// Check localStorage for all arrays saved in form-app.js
+for (var i = 0; i < storageNames.length; i++) {
+  if (localStorage[storageNames[i]]) {
+    switch (i) {
+    case 0:
+      var allSubscribers = JSON.parse(localStorage.allSubscribers);
+      break;
+    case 1:
+      var allArtists = JSON.parse(localStorage.allArtists);
+      break;
+    case 2:
+      var allFeedback = JSON.parse(localStorage.allFeedback);
+      break;
+    default:
+      console.log('This was only built for 3 stored arrays.');
+    }
+  } else {
+    switch (i) {
+    case 0:
+      var allSubscribers = [];
+      break;
+    case 1:
+      var allArtists = [];
+      break;
+    case 2:
+      var allFeedback = [];
+      break;
+    default:
+      console.log('Seriously, this shouldn\'t have happened.');
+    }
+  }
 }
 
-allSubscribers.length > 0 ? renderSubs() : renderEmpty();
+// if (localStorage.allSubscribers) {
+//   allSubscribers = JSON.parse(localStorage.allSubscribers);
+//   console.log('Retrieving from localStorage');
+//   console.log(allSubscribers);
+// } else {
+//   // If allProducts _is_ in localStorage, copy values accumulated over the past session
+//   console.log('There\'s no local storage!');
+//   var allSubscribers = [];
+// }
+
+allSubscribers.length > 0 ? renderSubs() : renderEmpty(subscriberSectionEl, 'subscribers');
+allArtists.length > 0 ? renderArtists() : renderEmpty(artistSectionEl, 'artists suggested');
+allFeedback.length > 0 ? renderFeedback() : renderEmpty(feedbackSectionEl, 'feedback offered');
 
 function renderSubs() {
   for (var i = 0; i < allSubscribers.length; i++) {
@@ -41,24 +79,23 @@ function renderSubs() {
   }
 }
 
-function renderEmpty() {
-  console.log('No subscribers.');
-  var pEl = document.createElement('p');
-  pEl.textContent = 'You have no new subscribers at this time.';
-  subscriberSectionEl.appendChild(pEl);
+function renderArtists() {
+  console.log('Artists would be rendered here.');
 }
 
-// Need to figure out how to iterate on DOM node objects stored in an array
-// for (var i = 0; i < listElements.length; i++) {
-//   var tempElement = document.createElement('li');
-//   tempElement.textContent = allSubscribers[0].interests.i;
-//   listElements[i][0] = tempElement;
-//   console.log(tempElement);
-//   listEl.appendChild(listElements[i][0]);
-// }
+function renderFeedback() {
+  console.log('Feedback would be rendered here.');
+}
+
+function renderEmpty(domElement, responseChecked) {
+  console.log('No ' + responseChecked);
+  var pEl = document.createElement('p');
+  pEl.textContent = 'You have no new ' + responseChecked + ' at this time.';
+  domElement.appendChild(pEl);
+}
 
 // Add a reset button to clear localStorage of past results and reload page
-// Use ROT13 "encryption" lolwut
+// Maybe use ROT13 "encryption" lolwut
 resetButton.onclick = function() {
   console.log('Reset button was pressed.');
   var checkReset = prompt('Are you sure? Doing so will erase all new records.\nPlease enter your admin password if this is correct. Otherwise press \'Cancel\'.');
