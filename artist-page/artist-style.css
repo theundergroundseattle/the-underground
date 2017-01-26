@@ -1,35 +1,57 @@
 
-
 main {
-  /*border: 2px solid white;*/
-  /*background-color: rgb(132, 134, 133);*/
   height: 600px;
   width: 90%;
   margin-bottom: 15%;
   margin-left: 4%;
 }
 
+h1 {
+  text-align: center;
+}
+
+h2 {
+  position: absolute;
+  text-align: center;
+  margin: 0 0 0 20%;
+}
+
+.description {
+  position: absolute;
+  margin: 0;
+  height: 180px;
+  width: 60%;
+  padding: 30px 0 0 0;
+  overflow-y: scroll;
+}
+
+.title {
+  padding: 0 0 0 3%;
+}
+
+.holding-box {
+  height: 220px;
+}
+
 .artist-picture {
-  height: 170px;
-  width: 170px;
+  height: 200px;
+  width: 190px;
   float: left;
-  border: 2px solid white;
-  border-radius: 200px;
+  border: 1px solid rgb(91, 93, 94);
   margin-left: 3%;
-  margin-top: 3%;
 }
 
 .artist-info {
   text-align: center;
-  border: 2px solid white;
-  background-color: white;
+  /*border: 2px solid white;*/
+  /*background-color: white;*/
   display: inline-flex;;
   float: left;
-  height: 20%;
+  height: 80%;
   width: 70%;
-  /*margin: auto;*/
+  /*color: black;*/
   margin-left: 3%;
-  margin-top: 4%;
+  margin-top: 1%;
   overflow-y: scroll;
 }
 
