@@ -177,9 +177,10 @@ function clearThanks() {
 // Pointy at http://stackoverflow.com/a/12299717 explains its use and advises against it for clarity
 function fixUrl (that) {
   console.log('Fix call working!');
-  console.log(that);
+  console.log(that.value);
   var string = that.value;
-  if (string.indexOf('http') !== 0) {
+  console.log(string.length);
+  if (string.length > 0 && string.indexOf('http') !== 0) {
     string = 'http://' + string;
   }
   that.value = string;
