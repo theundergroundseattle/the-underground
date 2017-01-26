@@ -45,7 +45,7 @@ function signupRequested(event) {
     console.log(interestName);
     var interestValue = newsSignup.childNodes[1].elements[interestName].checked;
     console.log(interestValue);
-    interests[interestName] = interestValue;
+    interests[genreList[i]] = interestValue;
   }
   if (newsSignup.childNodes[1].elements['genre_other'].value) {
     interests['other'] = newsSignup.childNodes[1].elements['genre_other'].value;
