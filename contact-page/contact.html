@@ -14,17 +14,17 @@
     <nav>
       <ul id="nav-bar">
         <li class="nav-items"><a href="../index.html">HOME</a></li>
-        <li class="nav-items"><a href="../artist-page/artist.html">ARTISTS</a></li>
+        <li class="nav-items"><a href="../artist-page/artist.html">EVENTS</a></li>
         <li class="nav-items"><a href="../calendar-page/calendar.html">CALENDAR</a></li>
         <li class="nav-items"><a href="../contact-page/contact.html">CONTACT</a></li>
         <li class="nav-items"><a href="../about-page/about.html">ABOUT</a></li>
       </ul>
     </nav>
     <main id="main-hook">
-      <p>This is where the form goes</p>
+      <!-- <p>This is where the form goes</p> -->
       <form class="form content" id="newsletter" method="post">
         <fieldset>
-          <legend>NEWSLETTER</legend>
+          <legend>Newsletter</legend>
           <fieldset>
             <legend>Name &amp; email address</legend>
             <label for="subscriber_name">Name</label>
@@ -33,11 +33,43 @@
             <input type="email" name="subscriber_email" placeholder="me@provider.com" required>
           </fieldset>
           <fieldset>
-            <legend>Interests</legend>
+            <legend>Genre Interests</legend>
             <ul>
-              <li><input type="checkbox" name="int1" value="interest1"><label for="int1">Interest 1</label></li>
-              <li><input type="checkbox" name="int2" value="interest2"><label for="int2">Interest 2</label></li>
-              <li><input type="checkbox" name="int3" value="interest3"><label for="int3">Interest 3</label></li>
+              <li>
+                <input type="checkbox" name="genre1" value="Breaks">
+                <label for="genre1">Breaks</label>
+              </li>
+              <li>
+                <input type="checkbox" name="genre2" value="Drum and Bass">
+                <label for="genre2">Drum and Bass</label>
+              </li>
+              <li>
+                <input type="checkbox" name="genre3" value="Dubstep">
+                <label for="genre3">Dubstep</label>
+              </li>
+              <li>
+                <input type="checkbox" name="genre4" value="Hardcore">
+                <label for="genre4">Hardcore</label>
+              </li>
+              <li>
+                <input type="checkbox" name="genre5" value="Hardstyle">
+                <label for="genre5">Hardstyle</label>
+              </li>
+              <li>
+                <input type="checkbox" name="genre6" value="House">
+                <label for="genre6">House</label>
+              </li>
+              <li>
+                <input type="checkbox" name="genre7" value="Trance">
+                <label for="genre7">Trance</label>
+              </li>
+              <li>
+                <input type="checkbox" name="genre8" value="Trap">
+                <label for="genre8">Trap</label>
+              </li>
+              <li>
+                <label for="genre_other">Other genres: <input type="text" name="genre_other" value="" placeholder="Other (optional)"></label>
+              </li>
             </ul>
           </fieldset>
           <section>
@@ -45,27 +77,42 @@
           </section>
       </fieldset>
       </form>
-      <form class="form content" id="survey" method="post">
+      <form class="form content" id="artist-form" method="post">
         <fieldset>
           <legend>Suggest an artist</legend>
-          Have an artist you'd like to see here? Send us any info, and we'll see if they're a good fit, and invite them to perform at The Underground.
+          Have an artist you'd like to see here? Let us know! We'll see if they're a good fit, and invite them to perform at The Underground.
           <fieldset>
             <label for="artist_name">Artist name:</label>
             <input type="text" name="artist_name" placeholder="Artist Name" required><br />
-            <label for="artist_link">Link to artist info:</label>
-            <input type="url" name="artist_link" placeholder="http://www.soundcloud.com/example/" required><br />
-            <label for="artist_comments">Any additional comments?</label>
-            <textarea cols="50" rows="4" name="artist_comments" placeholder="Notes"></textarea>
+            <label for="artist_link">Link to artist page:</label>
+            <input type="url" name="artist_link" placeholder="http://www.soundcloud.com/example/" onblur="fixUrl(this)"><br />
+            <label for="artist_comments">Notes:</label>
+            <textarea cols="50" rows="4" name="artist_comments" placeholder="Any comments about the artist? (This is optional.)"></textarea>
           </fieldset>
           <section>
-            <input type="submit" name="survey" value="Send suggestion">
+            <input type="submit" name="artist_form" value="Send suggestion">
+          </section>
+        </fieldset>
+      </form>
+      <form class="form content" id="feedback-form" method="post">
+        <fieldset>
+          <legend>Feedback</legend>
+          Let us know how we're doing.
+          <fieldset>
+            <label for="feedback_email">Email:</label>
+            <input type="email" name="feedback_email" placeholder="Email (optional)"><br />
+            <textarea cols="50" rows="4" name="feedback_text" placeholder="Comments or suggestions" required></textarea>
+          </fieldset>
+          <section>
+            <input type="submit" name="feedback" value="Send feedback">
           </section>
         </fieldset>
       </form>
       <section>
-        <a href="mailing-list.html">Review current subscribers &amp; survey responses.</a>
+        <a href="admin.html">ADMIN [placeholder link]</a>
       </section>
     </main>
+    <div class="push"></div>
     <footer class="content">
       <p id="copyright-text">Copyright © 2017 Track Killerz LLC | All Rights Reserved | </p>
       <a href="https://www.facebook.com/TheUnderground122/">
