@@ -54,10 +54,10 @@ Calendar.prototype.generateHTML = function(){
       html += '<td class="calendar-day">';
       if(day <= monthLength && (i > 0 || j >= startingDay)) {
         html += day;
-        if((calMonthLabels[this.month] + this.year) !== 'undefined' && (calMonthLabels[this.month] + this.year) !== null) {
-          var events = (calMonthLabels[this.month] + this.year) + '.' + (calDayLabels[j] + day);
-          html += events;
-        }
+        // if((calMonthLabels[this.month] + this.year) !== 'undefined' && (calMonthLabels[this.month] + this.year) !== null) {
+        //   var events = (calMonthLabels[this.month] + this.year) + '.' + (calDayLabels[j] + day);
+        //   html += events;
+        // }
           //here goes nothing//
         // console.log(calMonthLabels[this.month] + this.year + '.' + day);
         day++;

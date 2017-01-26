@@ -46,11 +46,17 @@ tr {
 
 
 .upcoming-events {
+  text-align: left;
   position: absolute;
   top: 70%;
   left: 2%;
   font-size: 18px;
 
+}
+
+#upcoming-title {
+  position: absolute;
+  left: 2%;
 }
 
 .calContainer {
@@ -64,11 +70,11 @@ tr {
 }
 
 #calList {
-  /*color: whitesmoke;
-  position: absolute;
-  right: 20px;
-  height: 500px;*/
+  margin-top: 10%;
+  margin-left: 2%;
+  width: 40%;
 }
+
 #calTitle {
   text-align: left;
   display: block;
