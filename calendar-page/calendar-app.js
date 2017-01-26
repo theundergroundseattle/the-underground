@@ -99,15 +99,14 @@ function calUpdate() {
 }
 
 var January2017 = {January27: 'Really Cool Band<br/>7pm No cover!'};
-var events2017 = {};
-var events2017 = {};
-var events2017 = {};
-var events2017 = {};
-var events2017 = {};
-var events2017 = {};
-var events2017 = {};
-var events2017 = {};
-var events2017 = {};
-var events2017 = {};
-var events2018 = {};
-var events2018 = {};
+var February2017 = {};
+var March2017 = {};
+var April2017 = {};
+var May2017 = {};
+var June2017 = {};
+var July2017 = {};
+var August2017 = {};
+var September2017 = {};
+var October2017 = {};
+var November2017 = {};
+var December2017 = {};
