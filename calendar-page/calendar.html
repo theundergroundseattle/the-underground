@@ -21,30 +21,43 @@
       </ul>
     </nav>
     <main>
-      <section id="calAll" class="content">
-        <!-- <h2 id="calTitle">Calendar</h2> -->
+      <section class="content calAll">
+        <h2 id="calTitle">Calendar</h2>
+        <select onchange="calUpdate()" id="dateList" name="Select">
+          <option value="0,2017">January 2017</option>
+          <option value="1,2017">February 2017</option>
+          <option value="2,2017">March 2017</option>
+          <option value="3,2017">April 2017</option>
+          <option value="4,2017">May 2017</option>
+          <option value="5,2017">June 2017</option>
+          <option value="6,2017">July 2017</option>
+          <option value="7,2017">August 2017</option>
+          <option value="8,2017">September 2017</option>
+          <option value="9,2017">October 2017</option>
+          <option value="10,2017">November 2017</option>
+          <option value="11,2017">December 2017</option>
+        </select>
         <!--Below is the container for the embedded calendar. The embed is commented out and folded up. DO NOT DELETE!-->
-        <div class="calContainer">
+        <!-- <div class="calContainer">
           <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23330033&amp;ctz=America%2FLos_Angeles" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-        </div>
-          <!-- <div class="upcoming-events">
-            <h3>Upcoming</h3>
+        </div> -->
+          <div class="upcoming-events">
+            <p id="upcoming-title">Upcoming</p>
             <ul id="calList">
-              <li class="eventList">Item 1</li>
-              <li class="eventList">Item 2</li>
-              <li class="eventList">Item 3</li>
-              <li class="eventList">Item 4</li>
-              <li class="eventList">Item 5</li>
+              <li><a href="https://www.facebook.com/events/671448336349962/">MalLabel Presents: MUGSY, Peek Levels, Clifford & Shermgerm</a></li>
+              <li><a href="https://www.facebook.com/events/729929363840375/">STA:The Sounds Of Trance:Thrillseekers</a></li>
+              <li><a href="https://www.facebook.com/events/231247290639803/">Onset: Year 15 ft Dieselboy</a></li>
             </ul>
           </div>
-          <div class="calBlock"> -->
+          <div id="calBlock" class="calBlock">
             <script src="calendar-app.js"></script>
-            <!--<script type="text/javascript">
-              var cal = new Calendar(1, 2017);//setting month and year here//
-              cal.generateHTML();
-              document.write(cal.getHTML());
-            </script> -->
-          <!-- </div> -->
+            <script type="text/javascript">
+              drawNewCal(5,1991);
+
+              // event handler to populate year goes in here
+
+            </script>
+          </div>
       </section>
       </main>
       <footer class="content">
