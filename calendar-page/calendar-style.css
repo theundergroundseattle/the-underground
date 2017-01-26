@@ -8,7 +8,7 @@ section {
   float: right;
   height: 600px;
   width: 70%;
-  margin-top: 10%;
+  margin-top: 3%;
   margin-right: 10%;
   margin-bottom: 10%;
   margin-left: 10%;
@@ -17,6 +17,7 @@ section {
 ul {
   text-align: left;;
 }
+
 
 p {
   text-align: center;
@@ -27,7 +28,7 @@ table {
 }
 
 .calendar-day {
-  width: 100px;
+  width: 15%;
   height: 45px;
 }
 
@@ -37,39 +38,50 @@ tr {
 }
 
 .calBlock{
-  /*float: right;*/
   position: absolute;
-  right: 50px;
+  top: 58%;
+  right: 5%;
   font-size: 18px;
 }
+
+
+.upcoming-events {
+  text-align: left;
+  position: absolute;
+  top: 70%;
+  left: 2%;
+  font-size: 18px;
+
+}
+
+#upcoming-title {
+  position: absolute;
+  left: 2%;
+}
+
 .calContainer {
   /*float: left;*/
   width: 810px;
   height: 610px;
   margin: auto;
   padding: 0px;
+  overflow: hidden;
   /*border: 1px solid royalblue;*/
 }
 
-.eventList {
-  text-align: left;
-}
-
-.upcoming-events {
-  position: absolute;
-  left: auto;
-}
-
 #calList {
-  color: whitesmoke;
-  /*border: 2px solid black;*/
-  float: left;
-  height: 500px;
+  margin-top: 10%;
+  margin-left: 2%;
+  width: 40%;
 }
+
 #calTitle {
-  text-align: center;
+  text-align: left;
   display: block;
   margin: auto;
+  position: absolute;
+  top: 55%;
+  left: 2%;
 }
 
 #calBox {
@@ -81,4 +93,18 @@ tr {
 }
 
 #calAll {
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  height: auto;
+}
+
+select {
+  position: absolute;
+  left: 2%;
+  top: 65%;
+  background-color: black;
+  color: white;
+  border: 1px solid rgb(42, 92, 179);
+  font-size: 16px;
 }

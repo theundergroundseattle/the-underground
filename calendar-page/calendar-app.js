@@ -19,7 +19,7 @@ Calendar.prototype.generateHTML = function(){
 //Then we can query the Date Object for the day of the week//
   var startingDay = firstDay.getDay();
 //Console logging just because.//
-  console.log(startingDay);
+  // console.log(startingDay);
 //This gets the number of days in the month//
   var monthLength = calDaysInMonth[this.month];
 //So now we have to compensate for Leap Year!//
@@ -54,6 +54,12 @@ Calendar.prototype.generateHTML = function(){
       html += '<td class="calendar-day">';
       if(day <= monthLength && (i > 0 || j >= startingDay)) {
         html += day;
+        // if((calMonthLabels[this.month] + this.year) !== 'undefined' && (calMonthLabels[this.month] + this.year) !== null) {
+        //   var events = (calMonthLabels[this.month] + this.year) + '.' + (calDayLabels[j] + day);
+        //   html += events;
+        // }
+          //here goes nothing//
+        // console.log(calMonthLabels[this.month] + this.year + '.' + day);
         day++;
       }
       html += '</td>';//Generating a bunch of weeks. Stop the loop when we run out of days//
@@ -77,3 +83,30 @@ Calendar.prototype.getHTML = function() {
 };
 
 console.log(calCurrentDate);
+
+function drawNewCal(month, year) {
+  var cal = new Calendar(month,year);//setting month and year here//
+  cal.generateHTML();
+  document.getElementById('calBlock').innerHTML = cal.getHTML();
+};
+
+function calUpdate() {
+  var userDate = document.getElementById('dateList').value.split(',');
+  console.log(userDate);
+  var userMonth = parseInt(userDate[0]);
+  var userYear = parseInt(userDate[1]);
+  drawNewCal(userMonth, userYear);
+}
+
+var January2017 = {January27: 'Really Cool Band<br/>7pm No cover!'};
+var February2017 = {};
+var March2017 = {};
+var April2017 = {};
+var May2017 = {};
+var June2017 = {};
+var July2017 = {};
+var August2017 = {};
+var September2017 = {};
+var October2017 = {};
+var November2017 = {};
+var December2017 = {};
