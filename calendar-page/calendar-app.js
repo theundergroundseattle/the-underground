@@ -54,9 +54,10 @@ Calendar.prototype.generateHTML = function(){
       html += '<td class="calendar-day">';
       if(day <= monthLength && (i > 0 || j >= startingDay)) {
         html += day;
-        if((calMonthLabels[this.month] + this.year) !== 'undefined' && (calMonthLabels[this.month] + this.year) !== null) {
-          var events = (calMonthLabels[this.month] + this.year) + '.' + (calDayLabels[j] + day);
-          html += events;
+        if(events[calMonthLabels[this.month]] + day + [this.year] //!== 'undefined' && events[calMonthLabels[this.month]] + day + [this.year] !== null//
+          ) {
+          console.log(events[calMonthLabels[this.month]] + day + [this.year]);
+          html += events[calMonthLabels[this.month]] + day + [this.year];
         }
           //here goes nothing//
         // console.log(calMonthLabels[this.month] + this.year + '.' + day);
@@ -98,15 +99,11 @@ function calUpdate() {
   drawNewCal(userMonth, userYear);
 }
 
-var January2017 = {January27: 'Really Cool Band<br/>7pm No cover!'};
-var February2017 = {};
-var March2017 = {};
-var April2017 = {};
-var May2017 = {};
-var June2017 = {};
-var July2017 = {};
-var August2017 = {};
-var September2017 = {};
-var October2017 = {};
-var November2017 = {};
-var December2017 = {};
+var events = {
+  January262017: 'Some fabulous event!',
+  January272017: 'Another fabulous event!',
+  January282017: 'The coolest band!',
+  February22017: 'Girls dancing!',
+  February32017: 'Blues',
+  February42017: 'Loud music!'
+};
