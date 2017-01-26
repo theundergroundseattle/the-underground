@@ -1,14 +1,58 @@
 'use strict';
 
 // Check localStorage for prior user signup - if not, initialize it with a data type of Array
-if (localStorage.allSubscribers) {
-  // If allProducts in localStorage, copy values accumulated over the past session
-  allSubscribers = JSON.parse(localStorage.allSubscribers);
-  console.log('Retrieving from localStorage');
-  console.log(allSubscribers);
-} else {
-  console.log('There\'s no local storage!');
-  var allSubscribers = [];
+// if (localStorage.allSubscribers) {
+//   // If allProducts in localStorage, copy values accumulated over the past session
+//   allSubscribers = JSON.parse(localStorage.allSubscribers);
+//   console.log('Retrieving from localStorage');
+//   console.log(allSubscribers);
+// } else {
+//   console.log('There\'s no local storage!');
+//   var allSubscribers = [];
+// }
+// Check localStorage for all arrays saved in form-app.js
+var storageNames = ['allSubscribers', 'allArtists', 'allFeedback'];
+for (var i = 0; i < storageNames.length; i++) {
+  if (localStorage[storageNames[i]]) {
+    console.log(storageNames[i]);
+    console.log(localStorage[storageNames[i]]);
+    switch (i) {
+    case 0:
+      var allSubscribers = JSON.parse(localStorage.allSubscribers);
+      console.log('Subscribers pulled');
+      console.log(allSubscribers);
+      break;
+    case 1:
+      var allArtists = JSON.parse(localStorage.allArtists);
+      console.log('Artists pulled');
+      console.log(allArtists);
+      break;
+    case 2:
+      var allFeedback = JSON.parse(localStorage.allFeedback);
+      console.log('Feedback pulled');
+      console.log(allFeedback);
+      break;
+    default:
+      console.log('This was only built for 3 stored arrays.');
+    }
+  } else {
+    switch (i) {
+    case 0:
+      var allSubscribers = [];
+      console.log('clear subscribers');
+      break;
+    case 1:
+      var allArtists = [];
+      console.log('clear artists');
+      break;
+    case 2:
+      var allFeedback = [];
+      console.log('clear feedback');
+      break;
+    default:
+      console.log('Seriously, this shouldn\'t have happened.');
+    }
+  }
 }
 
 var thanksTimer; // used in signupRequested() to remove a fixed element after a delay
@@ -83,12 +127,16 @@ function feedbackGiven(event) {
   event.preventDefault();
   event.stopPropagation();
   console.log(event.target);
+  console.log('old feedback');
+  console.log(allFeedback);
   if (event.target.feedback_email) {
     var email = event.target.feedback_email.value;
   }
   var text = event.target.feedback_text.value;
   var feedback = new Feedback(email, text);
   allFeedback.push(feedback);
+  console.log('new feedback');
+  console.log(allFeedback);
   saveResponse('allFeedback', allFeedback);
 }
 

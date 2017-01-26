@@ -80,11 +80,29 @@ function renderSubs() {
 }
 
 function renderArtists() {
-  console.log('Artists would be rendered here.');
+  for (var i = 0; i < allArtists.length; i++) {
+    var listEl = document.createElement('ul');
+    artistSectionEl.appendChild(listEl);
+    var artistObject = allArtists[i];
+    for (var key in artistObject) {
+      var itemEl = document.createElement('li');
+      itemEl.textContent = key.toUpperCase() + ': ' + artistObject[key];
+      listEl.appendChild(itemEl);
+    }
+  }
 }
 
 function renderFeedback() {
-  console.log('Feedback would be rendered here.');
+  for (var i = 0; i < allFeedback.length; i++) {
+    var listEl = document.createElement('ul');
+    feedbackSectionEl.appendChild(listEl);
+    var feedbackObject = allFeedback[i];
+    for (var key in feedbackObject) {
+      var itemEl = document.createElement('li');
+      itemEl.textContent = key.toUpperCase() + ': ' + feedbackObject[key];
+      listEl.appendChild(itemEl);
+    }
+  }
 }
 
 function renderEmpty(domElement, responseChecked) {
