@@ -11,3 +11,5 @@ The Underground is a multi-genre dance club in Pioneer Square. It is owned & ope
 
 ## Attributions
 - referenced http://www.w3schools.com/howto/howto_js_slideshow.asp
+- referenced W3 Schools for modal box implementation http://www.w3schools.com/howto/howto_css_modals.asp
+- referenced Code by Stephen Morley for nav bar scroll http://code.stephenmorley.org/javascript/detachable-navigation/
