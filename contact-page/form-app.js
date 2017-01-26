@@ -58,8 +58,8 @@ for (var i = 0; i < storageNames.length; i++) {
 var thanksTimer; // used in signupRequested() to remove a fixed element after a delay
 var genreList = ['Breaks', 'Drum and Bass', 'Dubstep', 'Hardcore', 'Hardstyle', 'House', 'Trance', 'Trap', 'Other'];
 var interestName;
-var allArtists = [];
-var allFeedback = [];
+// var allArtists = [];
+// var allFeedback = [];
 
 // Capture DOM elements
 var mainEl = document.getElementById('main-hook');
