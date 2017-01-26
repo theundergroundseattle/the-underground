@@ -13,6 +13,7 @@ if (localStorage.allSubscribers) {
 
 var thanksTimer; // used in signupRequested() to remove a fixed element after a delay
 var genreList = ['Breaks', 'Drum and Bass', 'Dubstep', 'Hardcore', 'Hardstyle', 'House', 'Trance', 'Trap', 'Other'];
+var interestName;
 
 // Capture DOM elements
 var mainEl = document.getElementById('main-hook');
@@ -37,16 +38,19 @@ function signupRequested(event) {
   var name = event.target.subscriber_name.value;
   var email = event.target.subscriber_email.value;
   var interests = {};
-  for (var i = 0; i < genreList.length; i++) {
-    var interestName = 'genre' + (i + 1);
-    var interestNode = event.target.getNamedItem(interestName).value;
-    console.log(interestNode);
-    console.log('interestName is: ' + interestName);
-    console.log(event.target.interestName);
-    console.log(event.target.genre1);
-    interests.genreList[i] = event.target.interestName.checked;
-    console.log(interests);
+  // populate interests with results from the signup form
+  for (var i = 0; i < (genreList.length - 1); i++) {
+    // last option in array is a string rather than boolean
+    interestName = 'genre' + (i + 1);
+    console.log(interestName);
+    var interestValue = newsSignup.childNodes[1].elements[interestName].checked;
+    console.log(interestValue);
+    interests[interestName] = interestValue;
   }
+  if (newsSignup.childNodes[1].elements['genre_other'].value) {
+    interests['other'] = newsSignup.childNodes[1].elements['genre_other'].value;
+  }
+  // Fallback - keep this code in case something breaks in the loop above
   // interests.interest1 = event.target.int1.checked;
   // interests.interest2 = event.target.int2.checked;
   // interests.interest3 = event.target.int3.checked;
@@ -55,6 +59,7 @@ function signupRequested(event) {
   //   interests[i] = event.target.prop.value;
   //   console.log(interests);
   // }
+
   console.log('Name is: ' + name);
   console.log('Email is: ' + email);
   console.log(interests);
