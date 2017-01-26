@@ -48,7 +48,7 @@ tr {
 .upcoming-events {
   position: absolute;
   top: 400px;
-  left: 30px;
+  left: 2%;
   font-size: 18px;
 
 }
@@ -74,8 +74,8 @@ tr {
   display: block;
   margin: auto;
   position: absolute;
-  top: 300px;
-  left: 30px;
+  top: 55%;
+  left: 2%;
 }
 
 #calBox {
@@ -88,14 +88,15 @@ tr {
 
 #calAll {
   width: 100%;
+  height: auto;
 }
 
 /*Dropdown Menus*/
 /*position for div that holds dropdown menu buttons*/
 #dropdown-menus {
   position: absolute;
-  top: 325px;
-  left: 30px;
+  top: 62%;
+  left: 2.5%;
 }
 /*button*/
 .dropbtn {
@@ -122,16 +123,16 @@ tr {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  background-color: black;
+  min-width: 85px;
   z-index: 1;
 }
 
 /*links inside the dropdown*/
 .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
+  color: white;
+  font-size: 18px;
+  padding: 3px 4px;
   text-decoration: none;
   display: block;
 }
