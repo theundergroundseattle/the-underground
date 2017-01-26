@@ -8,3 +8,6 @@ The Underground is a multi-genre dance club in Pioneer Square. It is owned & ope
 - Disa Marnesdottr
 - Kyle Hillman
 - Robert Hatfield
+
+## Attributions
+- referenced http://www.w3schools.com/howto/howto_js_slideshow.asp
