@@ -43,19 +43,26 @@ Solution found at https://css-tricks.com/quick-css-trick-how-to-center-an-object
 }
 
 #newsletter {
-  margin-left: 7%;
-  width: 40%;
+  margin-left: 6%;
+  width: 43%;
+  height: 352px;
   float: left;
 }
 
 #artist-form {
-  margin-right: 7%;
-  width: 40%;
+  margin-right: 6%;
+  width: 43%;
+  height: 352px;
   float: right;
 }
 
 #feedback-form {
-  clear:left;
+  position: relative;
+  top: 20px;
+  margin: 50px auto;
+  clear: left;
+  width: 58%;
+  padding: 0 15%;
 }
 
 .form {
@@ -78,8 +85,8 @@ label {
 }
 
 textarea {
-  width: 100%;
-  margin-top: 3px;
+  width: 60%;
+  margin: 3px auto;
 }
 
 input {
