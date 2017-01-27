@@ -4,6 +4,17 @@ var calDayLabels = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Fri
 var calMonthLabels = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 var calDaysInMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 console.log(calMonthLabels[4]);
+var events = {
+  January262017: '<a href="https://www.facebook.com/events/671448336349962/">MalLabel Presents: MUGSY, Peek Levels, Clifford & Shermgerm</a>',
+  January272017: '<a href="https://www.facebook.com/events/729929363840375/">STA:The Sounds Of Trance:Thrillseekers</a>',
+  January282017: '<a href="https://www.facebook.com/events/231247290639803/">Onset: Year 15 ft Dieselboy</a>',
+  February102017: '<a href="https://www.facebook.com/events/1377464888952199/">Seattle Trance Alliance Presents:The Sounds Of Trance: Alex M.O.R.P.H.</a>',
+  February112017: '<a href="https://www.facebook.com/events/249552965483974/">AWOL & Track Killerz present: Dissonance w/MEAUX GREEN</a>',
+  February242017: '<a href="https://www.facebook.com/events/282426332159332/">STA:The Sounds Of Trance:Neptune Project</a>',
+  March242017: '<a   href="https://www.facebook.com/events/227907177660388/">STA:The Sounds Of Trance:Manuel Le Saux & Darren Porter</a>',
+  // Monthxx2017: '<a href="url">link text</a>',
+  // Monthxx2017: '<a href="url">link text</a>',
+};
 //Date Object. I need to understand more about date objects.//
 var calCurrentDate = new Date();
 
@@ -53,13 +64,11 @@ Calendar.prototype.generateHTML = function(){
     for(var j = 0; j <= 6; j++) {
       html += '<td class="calendar-day">';
       if(day <= monthLength && (i > 0 || j >= startingDay)) {
+        var eventDay = calMonthLabels[this.month] + day + this.year;
         html += day;
-        // if((calMonthLabels[this.month] + this.year) !== 'undefined' && (calMonthLabels[this.month] + this.year) !== null) {
-        //   var events = (calMonthLabels[this.month] + this.year) + '.' + (calDayLabels[j] + day);
-        //   html += events;
-        // }
-          //here goes nothing//
-        // console.log(calMonthLabels[this.month] + this.year + '.' + day);
+        if(eventDay in events) {
+          html += '<br/>' + events[eventDay];
+        }
         day++;
       }
       html += '</td>';//Generating a bunch of weeks. Stop the loop when we run out of days//
@@ -82,13 +91,17 @@ Calendar.prototype.getHTML = function() {
   return this.html;
 };
 
+// Because you can never have too many console logs
 console.log(calCurrentDate);
+console.log();
 
+// Here's where we're actually drawing the calendar
 function drawNewCal(month, year) {
   var cal = new Calendar(month,year);//setting month and year here//
   cal.generateHTML();
   document.getElementById('calBlock').innerHTML = cal.getHTML();
 };
+// This is how we get the date the user selects from the dropdown into the html to select the data for the calendar.
 
 function calUpdate() {
   var userDate = document.getElementById('dateList').value.split(',');
@@ -98,15 +111,10 @@ function calUpdate() {
   drawNewCal(userMonth, userYear);
 }
 
-var January2017 = {January27: 'Really Cool Band<br/>7pm No cover!'};
-var February2017 = {};
-var March2017 = {};
-var April2017 = {};
-var May2017 = {};
-var June2017 = {};
-var July2017 = {};
-var August2017 = {};
-var September2017 = {};
-var October2017 = {};
-var November2017 = {};
-var December2017 = {};
+// console.log(new Date());
+// function firstLine() {
+//   var str = new Date();
+//   var res = str.split(' ', 4);
+// }
+// firstLine();
+// console.log(res);
