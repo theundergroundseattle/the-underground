@@ -1,1 +1,95 @@
 /*Use this page for master CSS styling*/
+ body {
+   background-image: url(img/bg-image.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   color: white; //placeholder color until background images are determined
+   font-family: 'Oswald', sans-serif;
+ }
+
+ nav {
+   height: 50px;
+   width: auto;
+   margin-bottom: 3%;
+   margin-top: 0;
+ }
+
+ img {
+   width: 668px;
+   height: 100px;
+   /*margin-left: 25%;*/
+ }
+
+.content {
+  background-color: rgba(14, 14, 14, 0.70);
+}
+
+#logo-pic {
+  height: 104px;
+  width: 100%;
+  text-align: center;
+}
+
+ #nav-bar {
+   text-align: center;
+   margin-top: 0;
+   position: absolute;
+   top: 111.5px;
+   height: 30px;
+   width: 100%;
+   padding: 0;
+   background-color: rgba(14, 14, 14, 0.70);
+ }
+
+ #nav-bar.fixed {
+   position: fixed;
+   top: 0px;
+   background-color: rgb(14, 14, 14);
+   border-bottom: 1px solid rgb(42, 92, 179);
+   z-index: +2;
+ }
+
+ .nav-items {
+   display: inline;
+   font-size: 20px;
+   font-family: 'Anton', sans-serif;
+   padding: 2px 20px;
+ }
+
+ a:link {
+   color: rgb(255, 255, 255);
+   text-decoration: none;
+ }
+
+ a:hover {
+   color: rgb(24, 8, 205);
+ }
+
+ a:visited {
+   color: rgb(255, 255, 255);
+ }
+
+ footer {
+   border-top: 1px solid rgb(42, 92, 179);
+   background-color: rgb(42, 92, 179);
+   margin-top: 3%;
+   position: absolute;
+   height: 50px;
+   width: 100%;
+ }
+
+ #copyright-text {
+  display: inline;
+  margin-left: 33%;
+  font-size: 18px;
+ }
+
+#fb-logo {
+  width: 17px;
+  height: 17px;
+  display: inline;
+  margin-top: 1%;
+  margin-left: 0.5%;
+}

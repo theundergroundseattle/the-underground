@@ -3,27 +3,68 @@
   <head>
     <meta charset="utf-8">
     <title>Artist Page</title>
+    <link rel="stylesheet" style="text/css" href="../main.css"/>
     <link rel="stylesheet" style="text/css" href="artist-style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   </head>
   <body>
+    <div id="logo-pic" class="content">
+      <img src="../img/main-logo.png" alt="logo"/>
+    </div>
     <nav>
-      <img />
-      <ul>
-        <li><a href="../home-page/index.html">Home</a></li>
-        <li><a href="../artist-page/artist.html">Artists</a></li>
-        <li><a href="../calendar-page/calendar.html">Calendar</a></li>
-        <li><a href="../contact-page/contact.html">Contact</a></li>
-        <li><a href="../about-page/about.html">About</a></li>
+      <ul id="nav-bar">
+        <li class="nav-items"><a href="../index.html">HOME</a></li>
+        <li class="nav-items"><a href="../artist-page/artist.html">EVENTS</a></li>
+        <li class="nav-items"><a href="../calendar-page/calendar.html">CALENDAR</a></li>
+        <li class="nav-items"><a href="../contact-page/contact.html">CONTACT</a></li>
+        <li class="nav-items"><a href="../about-page/about.html">ABOUT</a></li>
       </ul>
     </nav>
     <main>
-      <div></div>
-      <p>This is where the artist info goes</p>
-      <p>Soundcloud</p>
+      <h1 class="content">EVENTS</h1>
+      <div class="holding-box">
+        <img class="artist-picture" src="../img/trance-pic.png"/>
+        <div class="artist-info content">
+          <h2>Seattle Trance Alliance</h2> <br>
+          <p class="description">Seattle Trance Alliance was formed to help grow Trance in the Seattle area. Having been around for years, it started as collaboration of djs, artists, producers and promoters working together to help unify the trance community. Now they are bring the best and brightest Trance headliners from around the world to The Underground.<br>STA is:<br>
+            <strong><em><a href="https://www.facebook.com/Officialdjmarq/">MarQ</a>,
+            <a href="https://www.facebook.com/digitalascension/">Digital Ascension</a>,
+            <a href="https://www.facebook.com/theDJWEB/">Web</a>,
+            <a href="https://www.facebook.com/invincityofficial/">Invincity</a>,
+            <a href="https://www.facebook.com/J.Monsoon/">Johnny Monsoon</a>,
+            <a href="https://www.facebook.com/ChrisHerreraMusic/">Chris Herrera</a>,
+            <a href="https://www.facebook.com/SeanandXander/">Sean and Xander</a>,
+            <a href="https://www.facebook.com/FrequentFlyerMiles/">Frequent Flyer Miles</a>,
+            <a href="https://www.facebook.com/djgotek/">Gotek</a>,
+            <a href="https://www.facebook.com/cartographer.seattle/">Cartographer</a></em></strong>
+            </p>
+        </div>
+      </div>
+      <div class="holding-box">
+        <img class="artist-picture" src="../img/dissonance-pic.png"/>
+        <div class="artist-info content">
+          <h2 class="title">Dissonance</h2>
+          <p class="description">AWOL Events and Track Killerz have partnered up to bring the heaviest bass music every second Saturday night to Seattle's premier nightclub, The Underground, located in the heart of downtown Seattle.Featuring the most talented bass-heavy DJs from across the world, Dissonance combines heavy wubs, underground vibes, and a high energy nightclub feel.<br> Resident DJs include:<br>
+          <strong><em><a href="https://www.facebook.com/TheReckShop/">TheReckShop</a>, <a href="https://www.facebook.com/itmemusic/">DJ It Me</a></em></strong>
+          </p>
+        </div>
+      </div>
+      <div class="holding-box">
+        <img class="artist-picture" src="../img/radio-pic.png"/>
+        <div class="artist-info content">
+          <h2 class="title">Radioactive</h2>
+          <p class="description">Mayhem Events Presents: Radioactive Radioactive is a new 21+ hard music series at The Underground. Bringing all things hard dance, we work hard combine an old school rave style atmosphere with the high class lighting and production value of The Underground. <br> Resident DJs include:<br> <strong><em><a href="https://www.facebook.com/Dj-Wheelz-138005236229137/">DJ Wheelz</a>, <a href="https://www.facebook.com/djtigon">Tigon</a></em></strong> </p>
+        </div>
+      </div>
     </main>
-    <footer>
-      <p>legal info</p>
+    <footer class="content">
+      <p id="copyright-text">Copyright © 2017 Track Killerz LLC | All Rights Reserved | </p>
+      <a href="https://www.facebook.com/TheUnderground122/">
+        <img id="fb-logo" src="../img/FB-f-Logo__blue_29.png" />
+      </a>
     </footer>
+    <script src="../app.js"></script>
     <script src="artist-app.js"></script>
   </body>
 </html>

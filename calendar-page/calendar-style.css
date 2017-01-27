@@ -1,49 +1,129 @@
-nav {
-  border: 2px solid black;
-  height: 400px;
-  width: auto;
-  margin-bottom: 3%;
-}
-
 main {
-  border: 2px solid black;
   height: 600px;
-  width: auto;
+  width: 100%;
   margin-bottom: 3%;
+  font-family: 'Oswald', sans-serif;
 }
 
 section {
-  border: 2px solid black;
   float: right;
   height: 600px;
   width: 70%;
-  margin-bottom: 15%;
-  margin-left: 4%;
-}
-
-footer {
-  border: 2px solid black;
-  background-color: rgb(42, 92, 179);
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  margin-top: 3%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+  margin-left: 10%;
 }
 
 ul {
-  text-align: center;
-
+  text-align: left;;
 }
 
-li {
-  display: inline;
-}
 
 p {
   text-align: center;
 }
 
-#list {
-  border: 2px solid black;
-  float: left;
-  height: 500px;
+table {
+  font-family: ;
+}
+
+a:hover {
+  color: rgb(24, 8, 205);
+}
+
+.calendar-day {
+  text-align: left;
+  vertical-align: top;
+  min-width: 15%;
+  min-height: 15%;
+  max-width: 15%;
+  max-height: 15%;
+}
+
+.calendar-day:hover {
+  overflow: visible;
+  max-width: 40%;
+  max-height: 40%;
+}
+
+tr {
+  height: 60px;
+  width: 960px;
+}
+
+.calBlock{
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  font-size: 18px;
+  max-width: 65%;
+}
+
+
+.upcoming-events {
+  max-width: 30%;
+  text-align: left;
+  position: absolute;
+  top: 42%;
+  left: 2%;
+  font-size: 18px;
+
+}
+
+#upcoming-title {
+  position: absolute;
+  left: 2%;
+  margin-bottom: 2%;
+}
+
+.calContainer {
+  /*float: left;*/
+  width: 810px;
+  height: 610px;
+  margin: auto;
+  padding: 0px;
+  overflow: hidden;
+  /*border: 1px solid royalblue;*/
+}
+
+
+#calList {
+  margin-top: 10%;
+  margin-left: 2%;
+  width: 40%;
+}
+
+#calTitle {
+  text-align: left;
+  display: block;
+  margin: auto;
+  position: absolute;
+  top: 30%;
+  left: 2%;
+}
+
+#calBox {
+  width: 100%;
+  height: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  /*background-color: rgba(14, 14, 14, 0.9);*/
+}
+
+#calAll {
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  height: auto;
+}
+
+select {
+  position: absolute;
+  left: 2%;
+  top: 37%;
+  background-color: black;
+  color: white;
+  border: 1px solid rgb(42, 92, 179);
+  font-size: 16px;
 }

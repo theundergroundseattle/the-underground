@@ -2,26 +2,75 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Home Page</title>
+    <title>The Underground | About</title>
+    <link rel="stylesheet" style="text/css" href="../main.css"/>
     <link rel="stylesheet" style="text/css" href="about-style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   </head>
   <body>
+    <div id="logo-pic" class="content">
+      <img src="../img/main-logo.png" alt="logo"/>
+    </div>
     <nav>
-      <img />
-      <ul>
-        <li><a href="../home-page/index.html">Home</a></li>
-        <li><a href="../artist-page/artist.html">Artists</a></li>
-        <li><a href="../calendar-page/calendar.html">Calendar</a></li>
-        <li><a href="../contact-page/contact.html">Contact</a></li>
-        <li><a href="../about-page/about.html">About</a></li>
+      <ul id="nav-bar">
+        <li class="nav-items"><a href="../index.html">HOME</a></li>
+        <li class="nav-items"><a href="../artist-page/artist.html">EVENTS</a></li>
+        <li class="nav-items"><a href="../calendar-page/calendar.html">CALENDAR</a></li>
+        <li class="nav-items"><a href="../contact-page/contact.html">CONTACT</a></li>
+        <li class="nav-items"><a href="../about-page/about.html">ABOUT</a></li>
       </ul>
-    </nav>
+    </nav> 
     <main>
-      <div></div>
-      <p>This is where our info goes</p>
+      <h1 class="content">MEET THE DEV TEAM</h1>
+      <div class="content-box">
+        <img id="dev-picture-one" src="../img/david-pic.png"/>
+        <div id="my-modal-one" class="modal">
+          <div class="dev-box">
+            <h3 class="dev-name">David Cole</h3>
+            <span class="close">&times;</span>
+            <p class="dev-info">Hello my name is David Cole and I am from Seattle though I have lived all around the country. I have been working in the music industry for 15 years and if there is one thing that I have learned from my experiences is that there are no guaranties that you will have a job tomorrow. That is why I have chosen to become a web developer. The tech-industry is the fastest growing industry in America and web development is the new 'factory job' as in you can live comfortably off the wages and your career will not become obsolete any time soon. Being a web developer will change my life for the better and that's all I can ask.</p>
+          </div>
+        </div>
+      </div>
+      <div class="content-box">
+        <img id="dev-picture-two" src="../img/disa-pic.png"/>
+        <div id="my-modal-two" class="modal">
+          <div class="dev-box">
+            <h3 class="dev-name">Disa Marnesdottr</h3>
+            <span class="close">&times;</span>
+            <p class="dev-info">Geek. Mom. Interested in everything. Currently studying accessible web design at Code Fellows.</p>
+          </div>
+        </div>
+      </div>
+      <div class="content-box">
+        <img id="dev-picture-three" src="../img/robert-pic.png"/>
+        <div id="my-modal-three" class="modal">
+          <div class="dev-box">
+            <h3 class="dev-name">Robert Hatfield</h3>
+            <span class="close">&times;</span>
+            <p class="dev-info">I initially wanted to be a developer as soon as I learned about computers, but was frightened away at the age of 17 when I walked in and saw my stepfather refactoring GW-BASIC code. Fortunately, I came to my senses and am now studying full stack web development at Code Fellows in Seattle.
+            When I'm not trying to wrestle CSS into submission, I'm most likely to playing Destiny or a tabletop RPG.</p>
+          </div>
+        </div>
+      </div>
+      <div class="content-box">
+        <img id="dev-picture-four" src="../img/kyle-pic.png"/>
+        <div id="my-modal-four" class="modal">
+          <div class="dev-box">
+            <h3 class="dev-name">Kyle Hillman</h3>
+            <span class="close">&times;</span>
+            <p class="dev-info">I was born and raised in Olympia WA.  I have been married to my wife for the last 10 years and have two daughters.  I joined The United States Army in 2009 and served in Iraq and Afghanistan.  I graduated with my bachelor's degree in audio prodcution in 2016 and I am now heading towards the iOS course at Codefellows.</p>
+          </div>
+        </div>
+      </div>
+      <div id="blank-space"></div>
     </main>
-    <footer>
-      <p>legal info</p>
+    <footer class="content">
+      <p id="copyright-text">Copyright © 2017 Track Killerz LLC | All Rights Reserved | </p>
+      <a href="https://www.facebook.com/TheUnderground122/">
+        <img id="fb-logo" src="../img/FB-f-Logo__blue_29.png" />
+      </a>
     </footer>
     <script src="about-app.js"></script>
   </body>
