@@ -2,14 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Home Page</title>
+    <title>The Underground | Calendar</title>
     <link rel="stylesheet" style="text/css" href="../main.css">
     <link rel="stylesheet" style="text/css" href="calendar-style.css"/>
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet">
   </head>
   <body>
-    <div class="content">
+    <div id="logo-pic" class="content">
       <img src="../img/main-logo.png" alt="logo"/>
     </div>
     <nav>
@@ -43,7 +43,7 @@
           <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23330033&amp;ctz=America%2FLos_Angeles" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
         </div> -->
           <div class="upcoming-events">
-            <p id="upcoming-title">Upcoming</p>
+            <p id="upcoming-title">Upcoming</p><br/>
             <ul id="calList">
               <li><a href="https://www.facebook.com/events/671448336349962/">MalLabel Presents: MUGSY, Peek Levels, Clifford & Shermgerm</a></li>
               <li><a href="https://www.facebook.com/events/729929363840375/">STA:The Sounds Of Trance:Thrillseekers</a></li>
@@ -53,10 +53,7 @@
           <div id="calBlock" class="calBlock">
             <script src="calendar-app.js"></script>
             <script type="text/javascript">
-              drawNewCal(5,1991);
-
-              // event handler to populate year goes in here
-
+              drawNewCal(0,2017);
             </script>
           </div>
       </section>

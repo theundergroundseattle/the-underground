@@ -29,8 +29,18 @@ table {
 }
 
 .calendar-day {
-  width: 15%;
-  height: 45px;
+  text-align: left;
+  vertical-align: top;
+  min-width: 15%;
+  min-height: 15%;
+  max-width: 15%;
+  max-height: 15%;
+}
+
+.calendar-day:hover {
+  overflow: visible;
+  max-width: 40%;
+  max-height: 40%;
 }
 
 tr {
@@ -38,18 +48,24 @@ tr {
   width: 960px;
 }
 
+a:hover {
+  color: rgb(42, 92, 179);
+}
+
 .calBlock{
   position: absolute;
-  top: 58%;
+  top: 30%;
   right: 5%;
   font-size: 18px;
+  max-width: 65%;
 }
 
 
 .upcoming-events {
+  max-width: 30%;
   text-align: left;
   position: absolute;
-  top: 70%;
+  top: 42%;
   left: 2%;
   font-size: 18px;
 
@@ -58,6 +74,7 @@ tr {
 #upcoming-title {
   position: absolute;
   left: 2%;
+  margin-bottom: 2%;
 }
 
 .calContainer {
@@ -70,6 +87,7 @@ tr {
   /*border: 1px solid royalblue;*/
 }
 
+
 #calList {
   margin-top: 10%;
   margin-left: 2%;
@@ -81,7 +99,7 @@ tr {
   display: block;
   margin: auto;
   position: absolute;
-  top: 55%;
+  top: 30%;
   left: 2%;
 }
 
@@ -103,7 +121,7 @@ tr {
 select {
   position: absolute;
   left: 2%;
-  top: 65%;
+  top: 37%;
   background-color: black;
   color: white;
   border: 1px solid rgb(42, 92, 179);
