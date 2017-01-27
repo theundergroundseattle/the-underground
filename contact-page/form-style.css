@@ -3,6 +3,7 @@ main {
   height: auto;
   width: auto;
   margin: 0 auto -51px;
+  font-family: 'Oswald', sans-serif;
 }
 
 p, h2 {
