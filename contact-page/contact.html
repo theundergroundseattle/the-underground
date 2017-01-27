@@ -17,20 +17,28 @@
         <li class="nav-items"><a href="../index.html">HOME</a></li>
         <li class="nav-items"><a href="../artist-page/artist.html">EVENTS</a></li>
         <li class="nav-items"><a href="../calendar-page/calendar.html">CALENDAR</a></li>
-        <li class="nav-items"><a href="../contact-page/contact.html">CONTACT</a></li>
+        <li class="nav-items active-page"><a href="../contact-page/contact.html">CONTACT</a></li>
         <li class="nav-items"><a href="../about-page/about.html">ABOUT</a></li>
       </ul>
     </nav>
     <main id="main-hook">
-      <!-- <p>This is where the form goes</p> -->
+      <section class="content contact">
+        <section><a href="https://www.google.com/maps/place/122+S+Washington+St,+Seattle,+WA+98104/@47.6010565,-122.3355095,17z/data=!3m1!4b1!4m5!3m4!1s0x54906abac972eb37:0xc65c762f04ab9b10!8m2!3d47.6010565!4d-122.3333208" target="_blank">122 S Washington St<br />Seattle WA 98104</a>
+        </section>
+      <section>Call: <a href="tel:206-748-9975">206-748-9975</a>
+      </section>
+      <section>
+        <a href="mailto:marq@marq.org?cc=nobody@mozilla.org&subject=The%20Underground">Email</a>
+      </section>
+    </section>
       <form class="form content" id="newsletter" method="post">
         <fieldset>
-          <legend>Newsletter</legend>
+          <legend class="big-legend">Newsletter</legend>
           <fieldset>
             <legend>Name &amp; email address</legend>
-            <label for="subscriber_name">Name</label>
+            <label for="subscriber_name">Name: </label>
             <input type="text" name="subscriber_name" placeholder="Ben Evolent" required>
-            <label for="subscriber_email">Email address</label>
+            <br /><label for="subscriber_email">Email address: </label>
             <input type="email" name="subscriber_email" placeholder="me@provider.com" required>
           </fieldset>
           <fieldset>
@@ -69,25 +77,25 @@
                 <label for="genre8">Trap</label>
               </li>
               <li>
-                <label for="genre_other">Other genres: <input type="text" name="genre_other" value="" placeholder="Other (optional)"></label>
+                <label for="genre_other" class="text-in-ul">Other genres: <input type="text" name="genre_other" value="" placeholder="Other (optional)"></label>
               </li>
             </ul>
           </fieldset>
           <section>
             <input type="submit" name="subscribe" value="Subscribe">
           </section>
-      </fieldset>
+        </fieldset>
       </form>
       <form class="form content" id="artist-form" method="post">
         <fieldset>
-          <legend>Suggest an artist</legend>
+          <legend class="big-legend">Suggest an artist</legend>
           Have an artist you'd like to see here? Let us know! We'll see if they're a good fit, and invite them to perform at The Underground.
           <fieldset>
             <label for="artist_name">Artist name:</label>
             <input type="text" name="artist_name" placeholder="Artist Name" required><br />
             <label for="artist_link">Link to artist page:</label>
             <input type="url" name="artist_link" placeholder="http://www.soundcloud.com/example/" onblur="fixUrl(this)"><br />
-            <label for="artist_comments">Notes:</label>
+            <label for="artist_comments" class="textarea-label">Notes:</label>
             <textarea cols="50" rows="4" name="artist_comments" placeholder="Any comments about the artist? (This is optional.)"></textarea>
           </fieldset>
           <section>
@@ -97,11 +105,12 @@
       </form>
       <form class="form content" id="feedback-form" method="post">
         <fieldset>
-          <legend>Feedback</legend>
+          <legend class="big-legend">Feedback</legend>
           Let us know how we're doing.
           <fieldset>
             <label for="feedback_email">Email:</label>
             <input type="email" name="feedback_email" placeholder="Email (optional)"><br />
+            <label for="feedback_text" class="textarea-label">Your comments:</label>
             <textarea cols="50" rows="4" name="feedback_text" placeholder="Comments or suggestions" required></textarea>
           </fieldset>
           <section>
@@ -109,12 +118,10 @@
           </section>
         </fieldset>
       </form>
-      <section>
-        <a href="admin.html">ADMIN [placeholder link]</a>
-      </section>
     </main>
     <div class="push"></div>
     <footer class="content">
+      <a href="admin.html" id="admin">ADMIN</a>
       <p id="copyright-text">Copyright © 2017 Track Killerz LLC | All Rights Reserved | </p>
       <a href="https://www.facebook.com/TheUnderground122/">
         <img id="fb-logo" src="../img/FB-f-Logo__blue_29.png" />
