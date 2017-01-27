@@ -98,10 +98,11 @@ label {
 
 textarea {
   width: 60%;
+  height: 80px;
   margin: 8px auto;
 }
 
-.textarea {
+.textarea-label {
   vertical-align: top;
   position: relative;
   top: 8px;
