@@ -1,5 +1,4 @@
 main {
-  border: 2px solid black;
   min-height: 600px;
   height: auto;
   width: auto;
@@ -16,16 +15,18 @@ li, ul {
   list-style-type: none;
 }
 
-ul {
-  text-align: center;
-}
-
 input:invalid {
   border: 2px solid red;
 }
 
 input:valid {
   border: 2px solid blue;
+}
+
+input[type="submit"] {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0)
 }
 
 /*This centers the element in the middle of viewport.
@@ -39,6 +40,68 @@ Solution found at https://css-tricks.com/quick-css-trick-how-to-center-an-object
   width: 200px;
   height: 100px;
   border: 1px solid rgb(91, 93, 94);
+}
+
+#newsletter {
+  margin-left: 7%;
+  width: 40%;
+  float: left;
+}
+
+#artist-form {
+  margin-right: 7%;
+  width: 40%;
+  float: right;
+}
+
+#feedback-form {
+  clear:left;
+}
+
+.form {
+  padding: 1% 0%;
+}
+
+fieldset ul {
+  padding-left: 20px;
+  margin-top: 0px;
+  margin-bottom: -20px;
+}
+
+fieldset {
+  border: 0px;
+}
+
+label {
+  width: 125px;
+  display: inline-block;
+}
+
+textarea {
+  width: 100%;
+  margin-top: 3px;
+}
+
+input {
+  font-size: 0.85em;
+}
+
+input[type='text'],[type='email'],[type='url'] {
+  width: 250px;
+}
+
+input[name='genre_other'] {
+  position: relative;
+  top: -19px;
+  left: 108px;
+}
+
+.big-legend {
+  font-size: 1.2em;
+}
+
+.text-in-ul {
+  margin-top: 6px;
 }
 
 .push {

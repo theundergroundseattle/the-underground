@@ -21,15 +21,14 @@
       </ul>
     </nav>
     <main id="main-hook">
-      <!-- <p>This is where the form goes</p> -->
       <form class="form content" id="newsletter" method="post">
         <fieldset>
-          <legend>Newsletter</legend>
+          <legend class="big-legend">Newsletter</legend>
           <fieldset>
             <legend>Name &amp; email address</legend>
-            <label for="subscriber_name">Name</label>
+            <label for="subscriber_name">Name: </label>
             <input type="text" name="subscriber_name" placeholder="Ben Evolent" required>
-            <label for="subscriber_email">Email address</label>
+            <br /><label for="subscriber_email">Email address: </label>
             <input type="email" name="subscriber_email" placeholder="me@provider.com" required>
           </fieldset>
           <fieldset>
@@ -68,18 +67,18 @@
                 <label for="genre8">Trap</label>
               </li>
               <li>
-                <label for="genre_other">Other genres: <input type="text" name="genre_other" value="" placeholder="Other (optional)"></label>
+                <label for="genre_other" class="text-in-ul">Other genres: <input type="text" name="genre_other" value="" placeholder="Other (optional)"></label>
               </li>
             </ul>
           </fieldset>
           <section>
             <input type="submit" name="subscribe" value="Subscribe">
           </section>
-      </fieldset>
+        </fieldset>
       </form>
       <form class="form content" id="artist-form" method="post">
         <fieldset>
-          <legend>Suggest an artist</legend>
+          <legend class="big-legend">Suggest an artist</legend>
           Have an artist you'd like to see here? Let us know! We'll see if they're a good fit, and invite them to perform at The Underground.
           <fieldset>
             <label for="artist_name">Artist name:</label>
@@ -96,11 +95,12 @@
       </form>
       <form class="form content" id="feedback-form" method="post">
         <fieldset>
-          <legend>Feedback</legend>
+          <legend class="big-legend">Feedback</legend>
           Let us know how we're doing.
           <fieldset>
             <label for="feedback_email">Email:</label>
             <input type="email" name="feedback_email" placeholder="Email (optional)"><br />
+            <label for="feedback_text">Your comments:</label>
             <textarea cols="50" rows="4" name="feedback_text" placeholder="Comments or suggestions" required></textarea>
           </fieldset>
           <section>
