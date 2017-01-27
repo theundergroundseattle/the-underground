@@ -4,6 +4,14 @@ var calDayLabels = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Fri
 var calMonthLabels = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 var calDaysInMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 console.log(calMonthLabels[4]);
+var events = {
+  January262017: 'Some fabulous event!',
+  January272017: 'Another fabulous event!',
+  January282017: 'The coolest band!',
+  February22017: 'Girls dancing!',
+  February32017: 'Blues',
+  February42017: 'Loud music!'
+};
 //Date Object. I need to understand more about date objects.//
 var calCurrentDate = new Date();
 
@@ -53,14 +61,11 @@ Calendar.prototype.generateHTML = function(){
     for(var j = 0; j <= 6; j++) {
       html += '<td class="calendar-day">';
       if(day <= monthLength && (i > 0 || j >= startingDay)) {
+        var eventDay = calMonthLabels[this.month] + day + this.year;
         html += day;
-        if(events[calMonthLabels[this.month]] + day + [this.year] //!== 'undefined' && events[calMonthLabels[this.month]] + day + [this.year] !== null//
-          ) {
-          console.log(events[calMonthLabels[this.month]] + day + [this.year]);
-          html += events[calMonthLabels[this.month]] + day + [this.year];
+        if(eventDay in events) {
+          html += '<br/>' + events[eventDay];
         }
-          //here goes nothing//
-        // console.log(calMonthLabels[this.month] + this.year + '.' + day);
         day++;
       }
       html += '</td>';//Generating a bunch of weeks. Stop the loop when we run out of days//
@@ -83,13 +88,17 @@ Calendar.prototype.getHTML = function() {
   return this.html;
 };
 
+// Because you can never have too many console logs
 console.log(calCurrentDate);
+console.log();
 
+// Here's where we're actually drawing the calendar
 function drawNewCal(month, year) {
   var cal = new Calendar(month,year);//setting month and year here//
   cal.generateHTML();
   document.getElementById('calBlock').innerHTML = cal.getHTML();
 };
+// This is how we get the date the user selects from the dropdown into the html to select the data for the calendar.
 
 function calUpdate() {
   var userDate = document.getElementById('dateList').value.split(',');
@@ -99,11 +108,10 @@ function calUpdate() {
   drawNewCal(userMonth, userYear);
 }
 
-var events = {
-  January262017: 'Some fabulous event!',
-  January272017: 'Another fabulous event!',
-  January282017: 'The coolest band!',
-  February22017: 'Girls dancing!',
-  February32017: 'Blues',
-  February42017: 'Loud music!'
-};
+// console.log(new Date());
+function firstLine() {
+  var str = new Date();
+  var res = str.split(' ', 4);
+}
+firstLine();
+// console.log(res);

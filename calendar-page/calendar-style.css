@@ -28,6 +28,8 @@ table {
 }
 
 .calendar-day {
+  text-align: left;
+  vertical-align: top;
   width: 15%;
   height: 45px;
 }
@@ -42,15 +44,23 @@ tr {
   top: 58%;
   right: 5%;
   font-size: 18px;
+  max-width: 65%;
 }
 
 
 .upcoming-events {
+  max-width: 30%;
+  text-align: left;
   position: absolute;
   top: 70%;
   left: 2%;
   font-size: 18px;
 
+}
+
+#upcoming-title {
+  position: absolute;
+  left: 2%;
 }
 
 .calContainer {
@@ -63,12 +73,13 @@ tr {
   /*border: 1px solid royalblue;*/
 }
 
+
 #calList {
-  /*color: whitesmoke;
-  position: absolute;
-  right: 20px;
-  height: 500px;*/
+  margin-top: 10%;
+  margin-left: 2%;
+  width: 40%;
 }
+
 #calTitle {
   text-align: left;
   display: block;
