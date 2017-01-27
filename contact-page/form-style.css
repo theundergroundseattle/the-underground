@@ -5,9 +5,10 @@ main {
   margin: 0 auto -51px;
 }
 
-p {
+p, h2 {
   text-align: center;
 }
+
 
 li, ul {
   display: list-item;
@@ -65,6 +66,17 @@ Solution found at https://css-tricks.com/quick-css-trick-how-to-center-an-object
   padding: 0 15%;
 }
 
+#admin {
+  position: absolute;
+  top: 25%;
+  left: 3%;
+}
+
+.report {
+  margin: 20px 6%;
+  padding: 0 10% 10px 10%;
+}
+
 .form {
   padding: 1% 0%;
 }
@@ -101,6 +113,15 @@ input[name='genre_other'] {
   position: relative;
   top: -19px;
   left: 108px;
+}
+
+button {
+  position: absolute;
+  top: 25%;
+  left: 3%;
+  font-size: 16px;
+  background-color: red;
+  color: white;
 }
 
 .big-legend {
