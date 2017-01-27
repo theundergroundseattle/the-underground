@@ -143,3 +143,9 @@ button {
 .push {
   height: 51px;
 }
+
+.contact {
+  margin: 50px 33%;
+  text-align: center;
+  font-size: 1.5em;
+}
