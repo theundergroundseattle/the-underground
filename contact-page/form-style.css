@@ -98,7 +98,13 @@ label {
 
 textarea {
   width: 60%;
-  margin: 3px auto;
+  margin: 8px auto;
+}
+
+.textarea {
+  vertical-align: top;
+  position: relative;
+  top: 8px;
 }
 
 input {
@@ -107,11 +113,12 @@ input {
 
 input[type='text'],[type='email'],[type='url'] {
   width: 250px;
+  margin-top: 8px;
 }
 
 input[name='genre_other'] {
   position: relative;
-  top: -19px;
+  top: -28px;
   left: 108px;
 }
 
