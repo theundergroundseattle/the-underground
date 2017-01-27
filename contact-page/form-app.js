@@ -77,7 +77,7 @@ function signupRequested(event) {
     interests[genreList[i]] = interestValue;
   }
   if (newsSignup.childNodes[1].elements['genre_other'].value) {
-    interests['other'] = newsSignup.childNodes[1].elements['genre_other'].value;
+    interests['Other'] = newsSignup.childNodes[1].elements['genre_other'].value;
   }
   // Fallback - keep this code in case something breaks in the loop above
   // interests.interest1 = event.target.int1.checked;

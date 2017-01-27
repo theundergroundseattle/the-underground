@@ -59,13 +59,32 @@ function renderSubs() {
         console.log(key);
         console.log(subscriberObject[key]);
       } else {
+        var itemEl = document.createElement('li');
+        var interestList = '';
         for (var genre in subscriberObject['interests']) {
-          var itemEl = document.createElement('li');
-          itemEl.textContent = genre.toUpperCase() + ': ' + subscriberObject['interests'][genre];
-          listEl.appendChild(itemEl);
-          console.log(genre);
-          console.log(subscriberObject['interests'][genre]);
+          var interestCheck = subscriberObject['interests'][genre];
+          var result;
+          if (interestCheck) {
+            var result = genre === 'Other' ? 'OTHER: (' + interestCheck + ')' : genre;
+            // if (genre === 'Other') {
+            //   var result = interestCheck;
+            // } else {
+            //   var result = genre;
+            // }
+            console.log(genre);
+            console.log(interestList);
+            interestList += result + ', ';
+            console.log('New interests: ' + interestList);
+          }
         }
+        if (interestList.length > 0) {
+          interestList = interestList.substr(0, interestList.length - 2);
+        } else {
+          interestList = 'None provided';
+        }
+        itemEl.textContent = 'INTERESTS: ' + interestList;
+        listEl.appendChild(itemEl);
+        //go here
       }
     }
   }
