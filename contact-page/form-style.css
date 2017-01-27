@@ -1,24 +1,19 @@
 main {
-  border: 2px solid black;
   min-height: 600px;
   height: auto;
   width: auto;
   margin: 0 auto -51px;
-  font-family: 'Oswald', sans-serif;
 }
 
-p {
+p, h2 {
   text-align: center;
 }
+
 
 li, ul {
   display: list-item;
   text-align: left;
   list-style-type: none;
-}
-
-ul {
-  text-align: center;
 }
 
 input:invalid {
@@ -29,8 +24,14 @@ input:valid {
   border: 2px solid blue;
 }
 
+
 a:hover {
   color: rgb(24, 8, 205);
+
+input[type="submit"] {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0)
 }
 
 /*This centers the element in the middle of viewport.
@@ -46,6 +47,114 @@ Solution found at https://css-tricks.com/quick-css-trick-how-to-center-an-object
   border: 1px solid rgb(91, 93, 94);
 }
 
+#newsletter {
+  margin-left: 6%;
+  width: 43%;
+  height: 352px;
+  float: left;
+}
+
+#artist-form {
+  margin-right: 6%;
+  width: 43%;
+  height: 352px;
+  float: right;
+}
+
+#feedback-form {
+  position: relative;
+  top: 20px;
+  margin: 50px auto;
+  clear: left;
+  width: 58%;
+  padding: 0 15%;
+}
+
+#admin {
+  position: absolute;
+  top: 25%;
+  left: 3%;
+}
+
+.report {
+  margin: 20px 6%;
+  padding: 0 10% 10px 10%;
+}
+
+.form {
+  padding: 1% 0%;
+}
+
+fieldset ul {
+  padding-left: 20px;
+  margin-top: 0px;
+  margin-bottom: -20px;
+}
+
+fieldset {
+  border: 0px;
+}
+
+label {
+  width: 125px;
+  display: inline-block;
+}
+
+textarea {
+  width: 60%;
+  height: 80px;
+  margin: 8px auto;
+}
+
+.textarea-label {
+  vertical-align: top;
+  position: relative;
+  top: 8px;
+}
+
+input {
+  font-size: 0.85em;
+}
+
+input[type='text'],[type='email'],[type='url'] {
+  width: 250px;
+  margin-top: 8px;
+}
+
+input[name='genre_other'] {
+  position: relative;
+  top: -28px;
+  left: 108px;
+}
+
+button {
+  position: absolute;
+  top: 25%;
+  left: 3%;
+  font-size: 16px;
+  background-color: red;
+  color: white;
+}
+
+.big-legend {
+  font-size: 1.2em;
+}
+
+.text-in-ul {
+  margin-top: 6px;
+}
+
 .push {
   height: 51px;
+}
+
+.contact {
+  font-family: 'Oswald', sans-serif;
+  margin: 50px 33%;
+  text-align: center;
+  font-size: 1.25em;
+}
+
+section>a:hover {
+    color: darkgrey;
 }

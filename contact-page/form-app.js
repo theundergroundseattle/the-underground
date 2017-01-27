@@ -77,17 +77,8 @@ function signupRequested(event) {
     interests[genreList[i]] = interestValue;
   }
   if (newsSignup.childNodes[1].elements['genre_other'].value) {
-    interests['other'] = newsSignup.childNodes[1].elements['genre_other'].value;
+    interests['Other'] = newsSignup.childNodes[1].elements['genre_other'].value;
   }
-  // Fallback - keep this code in case something breaks in the loop above
-  // interests.interest1 = event.target.int1.checked;
-  // interests.interest2 = event.target.int2.checked;
-  // interests.interest3 = event.target.int3.checked;
-  // for (var i = 0; i < 3; i++) {
-  //   var prop = eval('int' + (i + 1));
-  //   interests[i] = event.target.prop.value;
-  //   console.log(interests);
-  // }
 
   console.log('Name is: ' + name);
   console.log('Email is: ' + email);
@@ -100,9 +91,8 @@ function signupRequested(event) {
 function artistSuggested(event) {
   event.preventDefault();
   event.stopPropagation();
-  console.log(event.target);
   var name = event.target.artist_name.value;
-  var url = event.target.artist_link.value;
+  var url = event.target.artist_link.value ? event.target.artist_link.value : '(None provided.)';
   if (event.target.artist_comments.value) {
     var comments = event.target.artist_comments.value;
   }
@@ -117,9 +107,7 @@ function feedbackGiven(event) {
   console.log(event.target);
   console.log('old feedback');
   console.log(allFeedback);
-  if (event.target.feedback_email) {
-    var email = event.target.feedback_email.value;
-  }
+  var email = event.target.feedback_email.value ? event.target.feedback_email.value : '(None provided.)';
   var text = event.target.feedback_text.value;
   var feedback = new Feedback(email, text);
   allFeedback.push(feedback);
