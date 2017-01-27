@@ -27,6 +27,7 @@ input:valid {
 
 a:hover {
   color: rgb(24, 8, 205);
+}
 
 input[type="submit"] {
   position: relative;
