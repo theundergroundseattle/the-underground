@@ -1,6 +1,6 @@
 main {
   border: 2px solid black;
-  min-height: 100%;
+  min-height: 600px;
   height: auto;
   width: auto;
   margin: 0 auto -51px;

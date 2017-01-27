@@ -18,11 +18,16 @@
  img {
    width: 668px;
    height: 100px;
-   margin-left: 25%;
+   /*margin-left: 25%;*/
  }
 
 .content {
   background-color: rgba(14, 14, 14, 0.70);
+}
+
+#logo-pic {
+  width: 100%;
+  text-align: center;
 }
 
  #nav-bar {
@@ -47,22 +52,22 @@
  .nav-items {
    display: inline;
    font-size: 20px;
-   margin-right: 4%;
    font-family: 'Anton', sans-serif;
+   padding: 2px 20px;
  }
 
-   a:link {
-     color: rgb(255, 255, 255);
-     text-decoration: none;
-   }
+ a:link {
+   color: rgb(255, 255, 255);
+   text-decoration: none;
+ }
 
-   a:hover {
-     color: rgb(24, 8, 205);
-   }
+ a:hover {
+   color: rgb(24, 8, 205);
+ }
 
-   a:visited {
-     color: rgb(255, 255, 255);
-   }
+ a:visited {
+   color: rgb(255, 255, 255);
+ }
 
  footer {
    border-top: 1px solid rgb(42, 92, 179);
