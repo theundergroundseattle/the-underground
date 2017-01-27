@@ -6,6 +6,7 @@
    background-attachment: fixed;
    background-size: cover;
    color: white; //placeholder color until background images are determined
+   font-family: 'Oswald', sans-serif;
  }
 
  nav {
