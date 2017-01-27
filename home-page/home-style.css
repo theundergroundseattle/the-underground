@@ -1,17 +1,16 @@
 
 main {
-  border: 2px solid black;
-  height: 600px;
+  height: 700px;
   width: auto;
   margin-bottom: 3%;
 }
 
 section {
-  border: 2px solid black;
-  height: 300px;
-  width: 90%;
-  margin-bottom: 15%;
-  margin-left: 4%;
+  height: 100px;
+  width: 70%;
+  margin-bottom: 7%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 ul {
@@ -24,7 +23,10 @@ li {
 }
 
 p {
-  text-align: center;
+  text-align: center;;
+  position: relative;
+  font-family: 'Arsenal', sans-serif;
+  font-weight:
 }
 
 /* Slideshow container */
@@ -32,12 +34,26 @@ p {
   max-width: 1000px;
   position: relative;
   margin: auto;
+  width: auto;
+  height: 500px;
+  margin-bottom: 5%;
 }
 
 .active {
   background-color: #717171;
 }
+/*image conatiner*/
 
+.mySlides {
+  width: auto;
+  height: auto;
+}
+
+.slideshow {
+  width: auto;
+  height: auto;
+  margin-left: 0;
+}
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -45,7 +61,7 @@ p {
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
+/* @- allows for compatibility with other browser*/
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}

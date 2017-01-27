@@ -5,12 +5,14 @@ var calMonthLabels = ['January', 'February', 'March', 'April', 'May', 'June', 'J
 var calDaysInMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 console.log(calMonthLabels[4]);
 var events = {
-  January262017: 'Some fabulous event!',
-  January272017: 'Another fabulous event!',
-  January282017: 'The coolest band!',
+  January262017: '<a href="https://www.facebook.com/events/671448336349962/">MalLabel Presents: MUGSY, Peek Levels, Clifford & Shermgerm</a>',
+  January272017: '<a href="https://www.facebook.com/events/729929363840375/">STA:The Sounds Of Trance:Thrillseekers</a>',
+  January282017: '<a href="https://www.facebook.com/events/231247290639803/">Onset: Year 15 ft Dieselboy</a>',
   February22017: 'Girls dancing!',
   February32017: 'Blues',
-  February42017: 'Loud music!'
+  February42017: 'Loud music!',
+  February92017: 'something',
+  February102017: 'something else',
 };
 //Date Object. I need to understand more about date objects.//
 var calCurrentDate = new Date();
@@ -109,9 +111,9 @@ function calUpdate() {
 }
 
 // console.log(new Date());
-function firstLine() {
-  var str = new Date();
-  var res = str.split(' ', 4);
-}
-firstLine();
+// function firstLine() {
+//   var str = new Date();
+//   var res = str.split(' ', 4);
+// }
+// firstLine();
 // console.log(res);

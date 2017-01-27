@@ -86,12 +86,27 @@
     - Researched slide transitions
 
 - ### What we are working on today
-  - [ ] Merge party!
-  - [ ] Complete modal elements for team bios
+  - [x] Merge party!
+  - [x] Complete modal elements for team bios
   - [ ] Get artist / brand page updated with content
   - [ ] Add essential data to index page
-  - [ ] Content on genre
+  - [x] Content on genre
   - [ ] Refactor slides to keep DRY
 
 - ### Obstacles - current & expected
   - None expected
+
+  - ### What we worked on yesterday
+    - [x] Complete modal elements for team bios
+    - [x] Get artist / brand page updated with content
+    - [x] Add essential data to index page
+    - [x] Content on genre
+    - ~[ ] Refactor slides to keep DRY~
+    - [x] Calendar renders to page, user can select month/year
+    - [ ] All form data captured, renders to admin page using localStorage
+
+- [ ] Styling Artists page
+- [ ] Dynamic loop to add more photos if need be (refactor)
+- [ ] Font choices, CSS layout
+- [ ] Plugging event data into calendar
+- [ ] 

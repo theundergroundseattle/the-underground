@@ -31,6 +31,7 @@ window.onclick = function(event){
     modalOne.style.display = 'none';
   }
 };
+
 var modalTwo = document.getElementById('my-modal-two');
 var btnTwo = document.getElementById('dev-picture-two');
 var spanTwo = document.getElementsByClassName('close')[1];
@@ -48,6 +49,7 @@ window.onclick = function(event){
     modalTwo.style.display = 'none';
   }
 };
+
 var modalThree = document.getElementById('my-modal-three');
 var btnThree = document.getElementById('dev-picture-three');
 var spanThree = document.getElementsByClassName('close')[2];
@@ -65,6 +67,7 @@ window.onclick = function(event){
     modalThree.style.display = 'none';
   }
 };
+
 var modalFour = document.getElementById('my-modal-four');
 var btnFour = document.getElementById('dev-picture-four');
 var spanFour = document.getElementsByClassName('close')[3];
