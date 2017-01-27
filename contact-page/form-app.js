@@ -102,7 +102,12 @@ function artistSuggested(event) {
   event.stopPropagation();
   console.log(event.target);
   var name = event.target.artist_name.value;
-  var url = event.target.artist_link.value;
+  console.log(name);
+  var url = event.target.artist_link.value ? event.target.artist_link.value : 'None provided.';
+  console.log(url);
+  // if (event.target.artist_link.value) {
+  //   var url = event.target.artist_link.value;
+  // }
   if (event.target.artist_comments.value) {
     var comments = event.target.artist_comments.value;
   }
