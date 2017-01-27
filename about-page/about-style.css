@@ -11,6 +11,10 @@ h1 {
   margin-bottom: 8%;
 }
 
+a:hover {
+  color: rgb(24, 8, 205);
+}
+
 .content-box {
   height: 200px;
   width: 10%;

@@ -29,6 +29,10 @@ input:valid {
   border: 2px solid blue;
 }
 
+a:hover {
+  color: rgb(24, 8, 205);
+}
+
 /*This centers the element in the middle of viewport.
 Solution found at https://css-tricks.com/quick-css-trick-how-to-center-an-object-exactly-in-the-center/*/
 .overlay {
