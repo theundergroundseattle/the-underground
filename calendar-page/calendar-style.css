@@ -54,7 +54,7 @@ a:hover {
 
 .calBlock{
   position: absolute;
-  top: 58%;
+  top: 30%;
   right: 5%;
   font-size: 18px;
   max-width: 65%;
@@ -65,7 +65,7 @@ a:hover {
   max-width: 30%;
   text-align: left;
   position: absolute;
-  top: 70%;
+  top: 42%;
   left: 2%;
   font-size: 18px;
 
@@ -99,7 +99,7 @@ a:hover {
   display: block;
   margin: auto;
   position: absolute;
-  top: 55%;
+  top: 30%;
   left: 2%;
 }
 
@@ -121,7 +121,7 @@ a:hover {
 select {
   position: absolute;
   left: 2%;
-  top: 65%;
+  top: 37%;
   background-color: black;
   color: white;
   border: 1px solid rgb(42, 92, 179);
