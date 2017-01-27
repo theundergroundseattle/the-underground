@@ -1,7 +1,7 @@
 
 main {
   height: 700px;
-  width: auto;
+  width: 100%;
   margin-bottom: 3%;
 }
 
@@ -26,6 +26,10 @@ p {
   text-align: center;;
   position: relative;
   font-family: 'Arsenal', sans-serif;
+}
+
+a:hover {
+  color: rgb(24, 8, 205);
 }
 
 /* Slideshow container */

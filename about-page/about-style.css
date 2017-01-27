@@ -1,6 +1,6 @@
 main {
   height: 600px;
-  width: 90%;
+  width: 100%;
   margin-bottom: 5%;
   margin-left: 4%;
   font-family: 'Oswald', sans-serif;
@@ -9,6 +9,10 @@ main {
 h1 {
   text-align: center;
   margin-bottom: 8%;
+}
+
+a:hover {
+  color: rgb(24, 8, 205);
 }
 
 .content-box {

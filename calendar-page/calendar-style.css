@@ -28,6 +28,10 @@ table {
   font-family: ;
 }
 
+a:hover {
+  color: rgb(24, 8, 205);
+}
+
 .calendar-day {
   text-align: left;
   vertical-align: top;
@@ -46,10 +50,6 @@ table {
 tr {
   height: 60px;
   width: 960px;
-}
-
-a:hover {
-  color: rgb(42, 92, 179);
 }
 
 .calBlock{
