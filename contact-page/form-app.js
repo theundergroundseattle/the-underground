@@ -92,7 +92,7 @@ function artistSuggested(event) {
   event.preventDefault();
   event.stopPropagation();
   var name = event.target.artist_name.value;
-  var url = event.target.artist_link.value ? event.target.artist_link.value : 'None provided.';
+  var url = event.target.artist_link.value ? event.target.artist_link.value : '(None provided.)';
   if (event.target.artist_comments.value) {
     var comments = event.target.artist_comments.value;
   }

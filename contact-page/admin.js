@@ -80,7 +80,7 @@ function renderSubs() {
         if (interestList.length > 0) {
           interestList = interestList.substr(0, interestList.length - 2);
         } else {
-          interestList = 'None provided';
+          interestList = '(None provided)';
         }
         itemEl.textContent = 'INTERESTS: ' + interestList;
         listEl.appendChild(itemEl);
